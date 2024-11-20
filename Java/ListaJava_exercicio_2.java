@@ -39,7 +39,7 @@ public static void main(String[] args)throws UnsupportedEncodingException {
 
     System.out.print("Nome: "+ texto + "," + " ");
     System.out.print("Nome: "+ idade + " " + "anos" + "," + " ");
-    System.out.print("Nome: "+ texto1 + "," + " ");
+    System.out.print("Cidade: "+ texto1 + "," + " ");
     
 }
 }
