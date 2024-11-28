@@ -1,6 +1,6 @@
 
 import java.util.Scanner;
-public class OpLogicos_13_E_Logico_Paridade {
+public class OpLogicos_14_OU_Logico_Paridade {
 Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -15,7 +15,7 @@ Scanner sc = new Scanner(System.in);
         System.out.print("Insira o segundo número: ");
         int numero2 = sc.nextInt();
         
-        if(numero1 % 2 == 0 && numero2 % 2 == 0){
+        if(numero1 % 2 == 0 || numero2 % 2 == 0){
             System.out.print("Ambos os números são pares");
         }
     }
