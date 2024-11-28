@@ -26,15 +26,13 @@ public class OpLogicos_exercicio_3 {
 //Caso contrário, exiba "Reprovado".
 
       
-    System.out.print("Insira sua nota na prova");
+    System.out.print("Insira sua nota na prova (1-10): ");
     int nota = Integer.parseInt(sc.nextLine());
-    System.out.print("Insira sua frequencia");
+    System.out.print("Insira sua frequencia (x/100): ");
     int frequencia = Integer.parseInt(sc.nextLine());
     
-    boolean frequenciaPorcent = frequencia >= 25;
-    boolean aprovado = nota == 7;
-    
-    if(frequenciaPorcent == aprovado){
+   
+    if(frequencia >= 25 && nota >= 7){
         System.out.print("APROVADO!");
     }else{
         System.out.print("REPROVADO!");
