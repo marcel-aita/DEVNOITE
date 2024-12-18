@@ -10,11 +10,29 @@ Atributos: Taxa(DECIMAL); Validade(TINYINT); Data(DATETIME); ID(SMALLINT).
 Entidade: Evento
 Atributos: Tipo(VARCHAR); Descrição(CHAR); Classificação etária(TINYINT); Nome(VARCHAR); ID(SMALLINT)
 
+Entidade: Fornecedor
+Atributos: ID(SMALLINT); Tipo(VARCHAR); Nome(VARCHAR);
+
 ```
 
 # Sistema de Gestão de Ordens de Produção
 
 ```
+Entidade: Funcionário
+Atributos: 
 
+Entidade: Cliente
+Atributo: 
+
+Entidade: Pedido 
+Atributo:
+
+Entidade: Ordem de produção
+Atributo:
+
+Entidade: Fornecedor
+Atributo:
+
+```
 
 
