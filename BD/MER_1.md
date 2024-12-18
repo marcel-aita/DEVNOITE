@@ -1,5 +1,7 @@
 # Sistema de Gestão de Eventos (MER)
 
+![DER Sistema de Gestão de Eventos](exercicios_MER_DER.png)
+
 ```
 Entidade: Paricipante
 Atributos: Tipo (VARCHAR); Nome (VARCHAR); Gênero(CHAR); Idade(INT); ID(SMALLINT).
@@ -15,7 +17,7 @@ Atributos: ID(SMALLINT); Tipo(VARCHAR); Nome(VARCHAR);
 
 ```
 
-# Sistema de Gestão de Ordens de Produção
+# Sistema de Gestão de Ordens de Produção (MER)
 
 ```
 Entidade: Funcionário
