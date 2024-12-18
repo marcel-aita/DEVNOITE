@@ -45,6 +45,27 @@ Pedido (1:1) --------------> Ordem de produção
 Ordem de produção (1:N) ----------> Fornecedor 
 
 ```
+# Sistema de Gestão de Saúde
+
+```
+Entidade: Paciente
+Atributo: Nome(VARCHAR); ID(SMALLINT); Solicitação(INT); RG(INT); Convênio/Partivular/SUS(VARCHAR); CPF(INT); Gênero(CHAR);
+
+Entidade: Consulta
+Atributa: Sintomas(TEXT); Exames anteriores(MEDIUMBLOB); ID(SMALLINT); Alergias(MEDIUMTEXT); Histórico(MEDIUMTEXT);
+
+Entidade: Médico
+Atributo: ID(SMALLINT); Nome(VARCHAR); Gênero(CHAR); CRM(); Cargo(VARCHAR); CPF e CNPJ(INT); E-mail(TEXT); Experiência(TEXT); Telefone(INT); 
+
+Entidade: Especialidade
+Atributo: ID(SMALLINT); Tipo(SMALLINT); Área(VARCHAR); Formação(VARCHAR);
+
+Relacionamentos:
+Paciente (1:N) ------> Consulta
+Consulta (N:N) ------> Médico
+Médico (1:N) -------> Especialidade
+
+```
 
 
 
