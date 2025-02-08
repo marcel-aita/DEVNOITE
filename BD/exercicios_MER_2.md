@@ -1,26 +1,26 @@
-# Sistema de Gestão de Eventos (MER)
+# Sistema de Aluguel de Carros(MER)
 
 ```
-Entidade: Paricipante
+TEntidade: Cliente 
 Atributos: Tipo (VARCHAR); Nome (VARCHAR); Gênero(CHAR); Idade(INT); ID(SMALLINT).
 
-Entidade: Inscrição
+Entidade: Alugar
 Atributos: Taxa(DECIMAL); Validade(TINYINT); Data(DATETIME); ID(SMALLINT).
 
-Entidade: Evento
-Atributos: Tipo(VARCHAR); Descrição(CHAR); Classificação etária(TINYINT); Nome(VARCHAR); ID(SMALLINT)
+Entidade: Contrato_Aluguel
+Atributos: Tipo(VARCHAR); Descrição(CHAR); Contratante(VARCHAR); Contratado(VARCHAR); Validade(TINYINT); ID(SMALLINT)
 
-Entidade: Fornecedor
-Atributos: ID(SMALLINT); Tipo(VARCHAR); Nome(VARCHAR);
+Entidade: Veículo
+Atributos: ID(SMALLINT); Tipo(VARCHAR); Cor(VARCHAR); Ano(INT); Modelo(VARCHAR); Placa(CHAR); Kilometragem(TEXT) 
 
 Relacionamentos:
-Participante (1:1) ------> Inscrição
-Inscrição (1:N) -------->   Evento
-Evento (1:N) ----------> Local
+Cliente (1:1) ------> Alugar
+Alugar (1:1) -------->   Contrato_Aluguel
+Veículo (1:1) ----------> Local
 
 ```
 
-# Sistema de Gestão de Ordens de Produção (MER)
+# Sistema de Gerenciamento de E-commerce (MER)
 
 ```
 Entidade: Funcionário
@@ -46,7 +46,7 @@ Ordem de produção (1:N) ----------> Fornecedor
 
 ```
 
-# Sistema de Gestão de Saúde
+# Sistema de Gestão Escolar (MER)
 
 ```
 Entidade: Paciente
