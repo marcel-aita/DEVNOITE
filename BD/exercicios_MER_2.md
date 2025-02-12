@@ -43,7 +43,7 @@ Atributo: ID(SMALLINT); Local de Pagamento(Varchar); Condições(Double); Valor(
 
 Relacionamentos:
 Ciente (1:N) ----------> Produto
-Produto (1:N) -------------> Pedido
+Produto (N:1) -------------> Pedido
 Pedido (1:1) --------------> Compra
 Compra (1:1) ----------> Pagamento 
 
@@ -62,15 +62,16 @@ Entidade: Estuda
 Atributo: ID(SMALLINT); Nome(VARCHAR); Gênero(CHAR); CRM(); Cargo(VARCHAR); CPF e CNPJ(INT); E-mail(TEXT); Experiência(TEXT); Telefone(INT); 
 
 Entidade: Disciplina
-Atributo: ID(SMALLINT); Tipo(SMALLINT); Área(VARCHAR); Formação(VARCHAR);
+Atributo: ID(SMALLINT); Tipo(SMALLINT); Área(VARCHAR); Datas/Horas(DATETIME)
 
 Entidade: Professor
-Atributo: ID(SMALLINT); Tipo(SMALLINT); Área(VARCHAR); Formação(VARCHAR);
+Atributo: ID(SMALLINT); Tipo(SMALLINT); Nome(); Formação(VARCHAR); Escala de Trabalho(DATETIME); Alunos(VARCHAR)
 
 Relacionamentos:
-Paciente (1:N) ------> Consulta
-Consulta (N:N) ------> Médico
-Médico (1:N) -------> Especialidade
+Matrícula (1:1) ------> Aluno
+Aluno (N:1) -------> Estuda
+Estuda (1:N) ---------> Disciplina
+Disciplina (N:N) --------> Professor
 
 ```
 
