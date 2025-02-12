@@ -23,20 +23,23 @@ Veículo (1:1) ----------> Local
 # Sistema de Gerenciamento de E-commerce (MER)
 
 ```
-Entidade: Funcionário
-Atributos: ID(SMALLINT); Cargo/Função(VARCHAR); Nome(VARCHAR);
-
 Entidade: Cliente
-Atributo: ID(SMALLINT); Nome(VARCHAR); CPF/CNPJ(INT); Endereço(TEXT); E-mail(TEXT); Telefone(INT);
+Atributo: ID(SMALLINT); Nome(VARCHAR); CPF/CNPJ(INT); Endereço(TEXT); Dados Bancários(TEXT); Telefone(INT); CEP(INT); Gênero(CHAR)
+
+Entidade: Produto 
+Atributo: ID(SMALLINT); Tipo(SMALLINT); Valor(DECIMAL); Data/Hora(DATETIME); Qauntidade(SMALLINT); Detalhes(TEXT);
 
 Entidade: Pedido 
 Atributo: ID(SMALLINT); Tipo(SMALLINT); Valor(DECIMAL); Data/Hora(DATETIME); Qauntidade(SMALLINT); Detalhes(TEXT);
 
-Entidade: Ordem de produção
+Entidade: Compra
 Atributo: ID(SMALLINT); Data/Hora(DATETIME); Detalhes(TEXT); Produto(VARCHAR); Funcionário(VARCHAR); Quantidade(SMALLINT); Previsão de entrega(DATETIME); 
 
-Entidade: Fornecedor
-Atributo: ID(SMALLINT); Tipo(SMALLINT); Nome(VARCHAR);
+Entidade: Pagamento
+Atributo: ID(SMALLINT); Tipo(SMALLINT); Nome(VARCHAR); 
+
+Entidade: Fonte Pagadora
+Atributo:
 
 Relacionamentos:
 Funcionário (1:N) ----------> Cliente
