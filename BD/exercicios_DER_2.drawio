@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="xxtGg2wU7yqez92tXx-T" name="Sistema de Aluguel de Carros ">
-        <mxGraphModel dx="1380" dy="779" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1379" dy="779" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -353,7 +353,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="1M4WCyiPqBJGXV5D22og" name="Sistema de Gerenciamento de E-commerce">
-        <mxGraphModel dx="1855" dy="1416" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1431" dy="820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -525,11 +525,6 @@
                         <mxPoint x="700" y="690" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="eLOhmJnXAVCqOYRDWn_L-69" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontColor=#000000;endArrow=none;endFill=0;" parent="1" source="eLOhmJnXAVCqOYRDWn_L-14" target="eLOhmJnXAVCqOYRDWn_L-70" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="640" y="260.0000000000001" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
                 <mxCell id="eLOhmJnXAVCqOYRDWn_L-71" style="edgeStyle=none;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;fontColor=#000000;endArrow=none;endFill=0;" parent="1" source="eLOhmJnXAVCqOYRDWn_L-14" target="eLOhmJnXAVCqOYRDWn_L-72" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="800" y="380" as="targetPoint"/>
@@ -540,7 +535,7 @@
                         <mxPoint x="760" y="550" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="eLOhmJnXAVCqOYRDWn_L-75" style="edgeStyle=none;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;fontColor=#000000;endArrow=none;endFill=0;" parent="1" source="eLOhmJnXAVCqOYRDWn_L-14" target="eLOhmJnXAVCqOYRDWn_L-76" edge="1">
+                <mxCell id="eLOhmJnXAVCqOYRDWn_L-75" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontColor=#000000;endArrow=none;endFill=0;" parent="1" source="eLOhmJnXAVCqOYRDWn_L-14" target="eLOhmJnXAVCqOYRDWn_L-76" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="480" y="210" as="targetPoint"/>
                     </mxGeometry>
@@ -639,9 +634,6 @@
                 <mxCell id="eLOhmJnXAVCqOYRDWn_L-68" value="Valor" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontColor=#000000;fillColor=#FFFFFF;" parent="1" vertex="1">
                     <mxGeometry x="660" y="650" width="80" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="eLOhmJnXAVCqOYRDWn_L-70" value="Forma de Pagamento" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontColor=#000000;fillColor=#FFFFFF;" parent="1" vertex="1">
-                    <mxGeometry x="600" y="220.0000000000001" width="80" height="80" as="geometry"/>
-                </mxCell>
                 <mxCell id="eLOhmJnXAVCqOYRDWn_L-72" value="Data/Hora" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontColor=#000000;fillColor=#FFFFFF;" parent="1" vertex="1">
                     <mxGeometry x="760" y="340" width="80" height="80" as="geometry"/>
                 </mxCell>
@@ -649,7 +641,7 @@
                     <mxGeometry x="720" y="510" width="80" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="eLOhmJnXAVCqOYRDWn_L-76" value="Fonte Receptora" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontColor=#000000;fillColor=#FFFFFF;" parent="1" vertex="1">
-                    <mxGeometry x="440" y="170" width="80" height="80" as="geometry"/>
+                    <mxGeometry x="560" y="190" width="80" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="eLOhmJnXAVCqOYRDWn_L-78" value="ID" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontColor=#000000;fillColor=#FFFFFF;" parent="1" vertex="1">
                     <mxGeometry x="840" y="650" width="80" height="80" as="geometry"/>
@@ -661,7 +653,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="dr1Qvx88KBJaIVN_RhD0" name="Sistema de Gestão Escolar">
-        <mxGraphModel dx="553" dy="779" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="789" dy="1113" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
