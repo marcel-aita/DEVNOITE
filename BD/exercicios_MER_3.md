@@ -2,10 +2,10 @@
 
 ```
 Entidade: Técnico 
-Atributos: ID(); Gênero(); Nome(); Especialidade(); Experiência()
+Atributos: ID(SMALLINT); Gênero(CHAR); Nome(VARCHAR); Especialidade(TEXT); Experiência()
 
 Entidade: Chamado
-Atributos: ID(); Nome(); Idade(); Gênero(); Endereço(); CPF();
+Atributos: ID(SMALLINT); Nome(VARCHAR); Idade(); Gênero(TINYTEXT); Endereço(VARCHAR); CPF(SMALLINT);
 
 Entidade: Categoria_Chamado
 Atributos: 
@@ -21,16 +21,16 @@ Chamado (1: N) ----------> Categoria_Chamado
 
 ```
 Entidade: Motorista 
-Atributos: ID(); Nome(); Idade(); Gênero(); Tempo de Serviço
+Atributos: ID(SMALLINT); Nome(VARCHAR); Idade(INT); Gênero(CHAR); Tempo de Serviço()
 
 Entidade: Ônibus
-Atributos: Placa(); Modelo(); Marca(); ID();
+Atributos: Placa(CHAR); Modelo(VARCHAR); Marca(SMALLTEXT); ID(SMALLINT);
 
 Entidade: Rota
-Atributos: ID(); Data/Hora(); Endereços()
+Atributos: ID(SMALLINT); Data/Hora(DATETIME); Endereços(VARCHAR)
 
 Entidade: Parada
-Atributos: ID(); Endereço(); Número()
+Atributos: ID(SMALLINT); Endereço(VARCHAR); Número(TINYINT)
 
 Relacionamentos:
 Motorista (1:1) ------> Dirige

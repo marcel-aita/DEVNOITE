@@ -2,7 +2,7 @@
 
 ```
 TEntidade: Cliente 
-Atributos: Tipo (VARCHAR); Nome (VARCHAR); Gênero(CHAR); Idade(INT); ID(SMALLINT).
+Atributos: Tipo (VARCHAR); Nome(VARCHAR); Gênero(CHAR); Idade(INT); ID(SMALLINT).
 
 Entidade: Alugar
 Atributos: Taxa(DECIMAL); Validade(TINYINT); Data(DATETIME); ID(SMALLINT).
