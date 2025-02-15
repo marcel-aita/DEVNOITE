@@ -2,13 +2,13 @@
 
 ```
 Entidade: Paricipante
-Atributos: Tipo (VARCHAR); Nome (VARCHAR); Gênero(CHAR); Idade(INT); ID(SMALLINT).
+Atributos: telefone (VARCHAR); CPF(CHAR); email (VARCHAR); Nome (VARCHAR); Gênero(CHAR); Idade(INT); ID(SMALLINT).
 
 Entidade: Inscrição
 Atributos: Taxa(DECIMAL); Validade(TINYINT); Data(DATETIME); ID(SMALLINT).
 
 Entidade: Evento
-Atributos: Tipo(VARCHAR); Descrição(CHAR); Classificação etária(TINYINT); Nome(VARCHAR); ID(SMALLINT)
+Atributos: Tipo(VARCHAR); Descrição(CHAR); Classificação etária(TINYINT); Nome(VARCHAR); ID(SMALLINT); Local(INT)
 
 Entidade: Fornecedor
 Atributos: ID(SMALLINT); Tipo(VARCHAR); Nome(VARCHAR);
@@ -24,7 +24,7 @@ Evento (1:N) ----------> Local
 
 ```
 Entidade: Funcionário
-Atributos: ID(SMALLINT); Cargo/Função(VARCHAR); Nome(VARCHAR);
+Atributos: elefone(VARCHAR); ID(SMALLINT); Cargo/Função(VARCHAR); Nome(VARCHAR);
 
 Entidade: Cliente
 Atributo: ID(SMALLINT); Nome(VARCHAR); CPF/CNPJ(INT); Endereço(TEXT); E-mail(TEXT); Telefone(INT);
