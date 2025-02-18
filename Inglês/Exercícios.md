@@ -1,15 +1,15 @@
 # Exercício 1
 
-1. A _program_ is a set of structions that tells a computer what to do
-2. Developers write _codes__ to create websites and aplications
-3. An __application____ is a software that allows users to perform specific tasks
-4. A _system developer__ is a person who writes and tests code for software programs
-5. HTML is used to create the structure of a ___web___ page
-6. When there is na error in the code, It's called a __bug____
-7. The __router____ conects computers to the internet
-8. An __operational___ system manages a computer's hardware and software resourceus
-9. JvaScript is a popular ___programming___ language for web develpment
-10. To save a copy of your data online, you can use __cloud_ storage
+1. A __program__ is a set of structions that tells a computer what to do
+2. Developers write __codes__ to create websites and aplications
+3. An __application__ is a software that allows users to perform specific tasks
+4. A __system developer__ is a person who writes and tests code for software programs
+5. HTML is used to create the structure of a __web__ page
+6. When there is na error in the code, It's called a __bug__
+7. The __router__ conects computers to the internet
+8. An __operational__ system manages a computer's hardware and software resourceus
+9. JvaScript is a popular __programming__ language for web develpment
+10. To save a copy of your data online, you can use __cloud__ storage
 
 # Glossário
 
@@ -42,5 +42,5 @@
 # Comparativos 1
 
 1. Windows XP is older than windows 11.
-2. Cristo redentor is bigger than Statue of liberty.
+2. Cristo redentor is greater than Statue of liberty.
 3. BYD is cheeper, more beautiful and way better than Tesla.
