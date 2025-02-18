@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="xxtGg2wU7yqez92tXx-T" name="Sistema de Aluguel de Carros ">
-        <mxGraphModel dx="1302" dy="779" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1066" dy="916" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -61,6 +61,16 @@
                 <mxCell id="YFclPP9cMdC0-PAfr8tu-66" style="edgeStyle=none;shape=connector;rounded=1;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=#000000;endArrow=none;endFill=0;" parent="1" source="2" target="YFclPP9cMdC0-PAfr8tu-67" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="-100" y="599.6666666666665" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="102" style="edgeStyle=none;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="2" target="103">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="150" y="350" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="104" style="edgeStyle=none;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="2" target="106">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="810" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f9f7ed;strokeColor=none;" parent="1" vertex="1">
@@ -185,11 +195,8 @@
                 <mxCell id="29" value="Gênero" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" parent="1" vertex="1">
                     <mxGeometry x="-115" y="710" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="31" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f9f7ed;strokeColor=none;" parent="1" vertex="1">
+                <mxCell id="31" value="CPF" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f9f7ed;strokeColor=none;" parent="1" vertex="1">
                     <mxGeometry x="40" y="760" width="70" height="70" as="geometry"/>
-                </mxCell>
-                <mxCell id="32" value="Idade" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" parent="1" vertex="1">
-                    <mxGeometry x="45" y="780" width="60" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="36" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontColor=#333333;fillColor=#f5f5f5;strokeColor=none;" parent="1" vertex="1">
                     <mxGeometry x="230" y="420" width="60" height="60" as="geometry"/>
@@ -230,7 +237,7 @@
                 <mxCell id="dZwi6wYJvxEGnWO49I2V-66" value="(1:1)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=#FFFFFF;" parent="1" vertex="1">
                     <mxGeometry x="810" y="570" width="50" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="YFclPP9cMdC0-PAfr8tu-67" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Helvetica;fontSize=11;fontColor=#000000;fillColor=#f5f5f5;" parent="1" vertex="1">
+                <mxCell id="YFclPP9cMdC0-PAfr8tu-67" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Helvetica;fontSize=11;fontColor=#000000;fillColor=#f5f5f5;strokeColor=none;" parent="1" vertex="1">
                     <mxGeometry x="-200" y="559.6666666666665" width="80" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="YFclPP9cMdC0-PAfr8tu-68" value="ID" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=#000000;" parent="1" vertex="1">
@@ -348,6 +355,12 @@
                 </mxCell>
                 <mxCell id="101" value="Nome" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontColor=#000000;fillColor=#FFFFFF;" parent="1" vertex="1">
                     <mxGeometry x="1530" y="440" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="103" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Telefone&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=default;strokeColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="140" y="370" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="106" value="Email" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="160" y="770" width="80" height="80" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

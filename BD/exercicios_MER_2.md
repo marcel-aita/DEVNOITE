@@ -2,19 +2,19 @@
 
 ```
 TEntidade: Cliente 
-Atributos: Tipo (VARCHAR); Nome(VARCHAR); Gênero(CHAR); Idade(INT); ID(SMALLINT).
+Atributos: Tipo (VARCHAR); Nome(VARCHAR); Gênero(CHAR); ID(INT); Telefone(VARCHAR); Email(VARCHAR); CPF(VARCHAR)
 
 Entidade: Alugar
-Atributos: Taxa(DECIMAL); Validade(TINYINT); Data(DATETIME); ID(SMALLINT).
+Atributos: Taxa(DECIMAL); Validade(TINYINT); Data(DATETIME); ID(INT)
 
 Entidade: Contrato_Aluguel
-Atributos: Tipo(VARCHAR); Descrição(CHAR); Contratante(VARCHAR); Contratado(VARCHAR); Validade(TINYINT); ID(SMALLINT)
+Atributos: Tipo(VARCHAR); Descrição(CHAR); Contratante(VARCHAR); Contratado(VARCHAR); Validade(TINYINT); ID(INT)
 
 Entidade: Veículo
-Atributos: ID(SMALLINT); Tipo(VARCHAR); Cor(VARCHAR); Ano(INT); Modelo(VARCHAR); Placa(CHAR); Kilometragem(TEXT)
+Atributos: ID(ID); Tipo(VARCHAR); Cor(VARCHAR); Ano(INT); Modelo(VARCHAR); Placa(CHAR); Kilometragem (TEXT)
 
 Entidade: Local
-Atributos: ID(SMALLINT); Nome (VARCHAR); Endereço(VARCHAR); CEP(SMALLINT)
+Atributos: ID(INT); Nome (VARCHAR); Endereço(VARCHAR); CEP(SMALLINT)
 
 Relacionamentos:
 Cliente (1:1) ------> Alugar
