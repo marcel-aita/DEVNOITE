@@ -5,13 +5,13 @@ TEntidade: Cliente
 Atributos: Tipo (VARCHAR); Nome(VARCHAR); Gênero(CHAR); ID(INT); Telefone(VARCHAR); Email(VARCHAR); CPF(VARCHAR)
 
 Entidade: Alugar
-Atributos: Taxa(DECIMAL); Validade(TINYINT); Data(DATETIME); ID(INT)
+Atributos: Taxa(VARCHAR); Validade(DATETIME); Data(DATETIME); ID(INT)
 
 Entidade: Contrato_Aluguel
-Atributos: Tipo(VARCHAR); Descrição(CHAR); Contratante(VARCHAR); Contratado(VARCHAR); Validade(TINYINT); ID(INT)
+Atributos: Tipo(VARCHAR); Descrição(CHAR); Contratante(VARCHAR); Contratado(VARCHAR); Periodo_Aluguel(TINYINT); ID(INT)
 
 Entidade: Veículo
-Atributos: ID(ID); Tipo(VARCHAR); Cor(VARCHAR); Ano(INT); Modelo(VARCHAR); Placa(CHAR); Kilometragem (TEXT)
+Atributos: ID(ID); Tipo(TEXT); Cor(TEXT); Ano(VARCHAR); Modelo(VARCHAR); Placa(CHAR); Kilometragem (VARCHAR)
 
 Entidade: Local
 Atributos: ID(INT); Nome (VARCHAR); Endereço(VARCHAR); CEP(SMALLINT)
@@ -27,19 +27,19 @@ Veículo (1:1) ----------> Local
 
 ```
 Entidade: Cliente
-Atributo: ID(SMALLINT); Nome(VARCHAR); CPF/CNPJ(INT); Endereço(TEXT); Dados Bancários(TEXT); Telefone(INT); CEP(INT); Gênero(CHAR)
+Atributo: ID(INT); Nome(VARCHAR); CPF/CNPJ(INT); Endereço(TEXT); Dados Bancários(VARCHAR); Telefone(INT); CEP(INT); Gênero(CHAR); RG(VARCHAR); Email(VARCHAR)
 
 Entidade: Produto 
-Atributo: ID(SMALLINT); Tipo(SMALLINT); Valor(DECIMAL); Data/Hora(DATETIME); Qauntidade(SMALLINT); Detalhes(TEXT);
+Atributo: ID(INT); Tipo(SMALLINT); Valor(DECIMAL); Data/Hora(DATETIME); Qauntidade(SMALLINT); Detalhes(TEXT);
 
 Entidade: Pedido 
-Atributo: ID(SMALLINT); Quantidade(DECIMAL); Data/Hora(DATETIME); Frete(Decimal); Descrição(TEXT);
+Atributo: ID(INT); Quantidade(DECIMAL); Data/Hora(TIMESTAMP); Frete(VARCHAR); Descrição(TEXT);
 
 Entidade: Compra
-Atributo: ID(SMALLINT); Data/Hora(DATETIME); Detalhes(TEXT); Produto(VARCHAR); Funcionário(VARCHAR); Quantidade(SMALLINT); Previsão de entrega(DATETIME); 
+Atributo: ID(INT); Data/Hora(DATETIME); Detalhes(TEXT); Produto(VARCHAR); Vendedor(VARCHAR); Quantidade(VARCHAR); Previsão de entrega(TIMESTAMP); 
 
 Entidade: Pagamento
-Atributo: ID(SMALLINT); Local de Pagamento(Varchar); Condições(Double); Valor(DECIMAL); Fonte Pagadora(MEDIUMINT); Fonte Receptora(MEDIUMINT); Data/Hora(DATETIME);
+Atributo: ID(INT); Local de Pagamento(VARCHAR); Condições(DOUBLE); Valor(DECIMAL); Comprador(VARCHAR); Data/Hora(DATETIME);
 
 Relacionamentos:
 Ciente (1:N) ----------> Produto
@@ -53,19 +53,19 @@ Compra (1:1) ----------> Pagamento
 
 ```
 Entidade: Matrícula
-Atributo: Nome(VARCHAR); ID(SMALLINT); Solicitação(INT); RG(INT); Convênio/Partivular/SUS(VARCHAR); CPF(INT); Gênero(CHAR);
+Atributo: Nome(VARCHAR); ID(INT); Solicitação(INT); RG(INT); Convênio/Partivular/SUS(VARCHAR); CPF(INT); Gênero(CHAR);
 
 Entidade: Aluno
-Atributa: Sintomas(TEXT); Exames anteriores(MEDIUMBLOB); ID(SMALLINT); Alergias(MEDIUMTEXT); Histórico(MEDIUMTEXT);
+Atributa: ID(INT); Nome(VARCHAR); CPF(VARCHAR); Endereço(VARCHAR); Telefone(VARCHAR); Email(VARCHAR)
 
 Entidade: Estuda
-Atributo: ID(SMALLINT); Nome(VARCHAR); Gênero(CHAR); CRM(); Cargo(VARCHAR); CPF e CNPJ(INT); E-mail(TEXT); Experiência(TEXT); Telefone(INT); 
+Atributo: ID(INT); Instituiçãi(VARCHAR); Disciplina(VARCHAR)
 
 Entidade: Disciplina
-Atributo: ID(SMALLINT); Tipo(SMALLINT); Área(VARCHAR); Datas/Horas(DATETIME)
+Atributo: ID(INT); Tipo(VARCHAR); Área(VARCHAR); Datas/Horas(VARCHAR)
 
 Entidade: Professor
-Atributo: ID(SMALLINT); Tipo(SMALLINT); Nome(); Formação(VARCHAR); Escala de Trabalho(DATETIME); Alunos(VARCHAR)
+Atributo: ID(INT); Tipo(VARCHAR); Nome(VARCHAR); Formação(VARCHAR); Escala de Trabalho(VARCHAR); Alunos(CHAR)
 
 Relacionamentos:
 Matrícula (1:1) ------> Aluno
