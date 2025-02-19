@@ -39,8 +39,31 @@
 11. Does he knows how to programme a code line
 12. He doesnt't make any exercize today in class.
 
-# Comparativos 1
+# Comparativos
 
 1. Windows XP is older than windows 11.
 2. Cristo redentor is greater than Statue of liberty.
 3. BYD is cheeper, more beautiful and way better than Tesla.
+
+- ## Glossário Exercicío 1 (Comparatives)
+
+```
+Portable | Expensive | Visual
+Important | Easy | Fast
+
+```
+- ## Exercício 1
+
+1. Python Is __easier__ than C++
+2. SSDs are __faster__ than HDs
+3. Cybersecurity Is __less visual__ than UI Design "__more important__"
+4. Laptops are __more portable__ than desktops
+5. Frontend development Is __more visual__ than backend develpment
+6. Apple product are usually __more expensive__ than other brands
+
+- ## Exercício 2
+
+1. Resposta B)
+2. Resposta A)
+3. Resposta A)
+4. Resposta B) 
