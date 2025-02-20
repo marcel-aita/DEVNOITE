@@ -2,18 +2,21 @@
 
 ```
 Entidade: Técnico 
-Atributos: ID(SMALLINT); Gênero(CHAR); Nome(VARCHAR); Especialidade(TEXT); Experiência()
+Atributos: ID(INT); Nome(VARCHAR); CPF(VARCHAR); Telefone(VARCHAR); Email(VARCHAR); Endereço(VARCHAR); Função(VARCHAR)
+
+Entidade: Cliente
+Atributos: ID(INT); Nome(VARCHAR); CPF(VARCHAR); Telefone(VARCHAR); Email(VARCHAR); Endereço(VARCHAR)
 
 Entidade: Chamado
-Atributos: ID(SMALLINT); Nome(VARCHAR); Idade(); Gênero(TINYTEXT); Endereço(VARCHAR); CPF(SMALLINT);
+Atributos: ID(INT); Data/Hora(DATETIME); Endereço(VARCHAR); Detalhes(VARCHAR)
 
 Entidade: Categoria_Chamado
-Atributos: 
+Atributos: ID(INT); Tipo(VARCHAR); Detalhes(VARCHAR);
 
 Relacionamentos:
-Técnico (1:1) ------> Cliente
-Cliente (1:1) -------->  Chamado
-Chamado (1: N) ----------> Categoria_Chamado
+Técnico (1:N) ------> Cliente
+Cliente (1:N) -------->  Chamado
+Chamado (1:N) ----------> Categoria_Chamado
 
 ```
 
