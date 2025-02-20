@@ -53,19 +53,19 @@ Compra (1:1) ----------> Pagamento
 
 ```
 Entidade: Matrícula
-Atributo: Nome(VARCHAR); ID(INT); Solicitação(INT); RG(INT); Convênio/Partivular/SUS(VARCHAR); CPF(INT); Gênero(CHAR);
+Atributo: Nome(VARCHAR); ID(INT); RG(INT); CPF(INT); Telefone(VARCHAR); Email(VARCHAR); Endereço(VARCHAR)
 
 Entidade: Aluno
 Atributa: ID(INT); Nome(VARCHAR); CPF(VARCHAR); Endereço(VARCHAR); Telefone(VARCHAR); Email(VARCHAR)
 
 Entidade: Estuda
-Atributo: ID(INT); Instituiçãi(VARCHAR); Disciplina(VARCHAR)
+Atributo: ID(INT); Instituição(VARCHAR); Disciplina(VARCHAR)
 
 Entidade: Disciplina
 Atributo: ID(INT); Tipo(VARCHAR); Área(VARCHAR); Datas/Horas(VARCHAR)
 
 Entidade: Professor
-Atributo: ID(INT); Tipo(VARCHAR); Nome(VARCHAR); Formação(VARCHAR); Escala de Trabalho(VARCHAR); Alunos(CHAR)
+Atributo: ID(INT); Disciplina(VARCHAR); Nome(VARCHAR); Formação(VARCHAR); Hora de trabalho(VARCHAR); CPF(VARCHAR); Telefone(VARCHAR); Email(VARCHAR);
 
 Relacionamentos:
 Matrícula (1:1) ------> Aluno
