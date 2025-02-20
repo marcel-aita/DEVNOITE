@@ -24,16 +24,16 @@ Chamado (1:N) ----------> Categoria_Chamado
 
 ```
 Entidade: Motorista 
-Atributos: ID(SMALLINT); Nome(VARCHAR); Idade(INT); Gênero(CHAR); Tempo de Serviço()
+Atributos: ID(INT); Nome(VARCHAR); CPF(VARCHAR); Endereço(VARCHAR); Telefone(VARCHAR); Email(VARCHAR); Carteira_motorista(VARCHAR)
 
 Entidade: Ônibus
-Atributos: Placa(CHAR); Modelo(VARCHAR); Marca(SMALLTEXT); ID(SMALLINT);
+Atributos: ID(INT); Placa(CHAR); Modelo(CHAR); Marca(VARCHAR); Kilometros_rodados(CHAR); 
 
 Entidade: Rota
-Atributos: ID(SMALLINT); Data/Hora(DATETIME); Endereços(VARCHAR)
+Atributos: ID(INT); Data/Hora(DATETIME); Endereços(VARCHAR)
 
 Entidade: Parada
-Atributos: ID(SMALLINT); Endereço(VARCHAR); Número(TINYINT)
+Atributos: ID(INT); Endereço(VARCHAR); Número(TINYINT)
 
 Relacionamentos:
 Motorista (1:1) ------> Dirige
