@@ -50,22 +50,21 @@ Ordem de produção (1:N) ----------> Fornecedor
 
 ```
 Entidade: Paciente
-Atributo: Nome(VARCHAR); ID(SMALLINT); Solicitação(INT); RG(INT); Convênio/Partivular(VARCHAR); CPF(INT); Gênero(CHAR); Telefone(VARCHAR); Email(VARCHAR)
+Atributo: id_paciente(INT); nome_paciente(VARCHAR); cpf(CHAR); endereco(VARCAHR); telefone(VARCHAR); email(VARCAHR)
 
 Entidade: Consulta
-Atributa: Sintomas(TEXT); Exames anteriores(MEDIUMBLOB); ID(SMALLINT); Alergias(MEDIUMTEXT); Histórico(MEDIUMTEXT); Data/Hora (VARCHAR)
+Atributa: id_consulta(INT); data_hora(TIMESTAMP); diagnostico(VARCHAR); receita(VARCHAR); cobraca(VARCHAR)
 
 Entidade: Médico
-Atributo: ID(SMALLINT); Nome(VARCHAR); Gênero(CHAR); CRM(); Cargo(VARCHAR); CPF e CNPJ(INT); E-mail(TEXT); Experiência(TEXT); Telefone(INT); 
+Atributo: id_medico(INT); nome_medico(VARCHAR); crm(CHAR); telefone(VARCHAR); email() 
 
 Entidade: Especialidade
-Atributo: ID(SMALLINT); Tipo(SMALLINT); Área(VARCHAR); Formação(VARCHAR);
+Atributo: id_especialidae(); tipo()
 
 Relacionamentos:
-Paciente (1:N) ------> Consulta
-Consulta (N:N) ------> Médico
-Médico (1:N) -------> Especialidade
-
+Consulta(1:1) ----> (1:1)Médico
+Consulta(1:1) ----> (1:1)Paciente
+Médico(N:1) ------> (N:1)Especialidade
 ```
 
 [def]: exercicios_MER_DER.jpg
