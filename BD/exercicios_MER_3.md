@@ -36,11 +36,9 @@ Entidade: Parada
 Atributos: ID(INT); Endereço(VARCHAR); Número(TINYINT)
 
 Relacionamentos:
-Motorista (1:1) ------> Dirige
-Dirige (1:1) --------> Ônibus
-Ônibus (1:1)----------> Percorre
-Percorre (1:1) --------> Rota
-Rota (N:N) --------> Parada
+Motorista (1:1) ------> Ônibus
+Ônibus (1:1) ---------> Rota
+Rota (1:N) -----------> Parada
 
 ```
 
