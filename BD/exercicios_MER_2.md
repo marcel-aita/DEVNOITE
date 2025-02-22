@@ -4,22 +4,17 @@
 TEntidade: Cliente 
 Atributos: Tipo (VARCHAR); Nome(VARCHAR); Gênero(CHAR); ID(INT); Telefone(VARCHAR); Email(VARCHAR); CPF(VARCHAR)
 
-Entidade: Alugar
-Atributos: Taxa(VARCHAR); Validade(DATETIME); Data(DATETIME); ID(INT)
-
 Entidade: Contrato_Aluguel
-Atributos: Tipo(VARCHAR); Descrição(CHAR); Contratante(VARCHAR); Contratado(VARCHAR); Periodo_Aluguel(TINYINT); ID(INT)
+Atributos: id_contrato(); data_devolucao(); data_retirada()
 
 Entidade: Veículo
-Atributos: ID(ID); Tipo(TEXT); Cor(TEXT); Ano(VARCHAR); Modelo(VARCHAR); Placa(CHAR); Kilometragem (VARCHAR)
+Atributos: id_veiculo(); tipo(); marca(); cor(); placa(); quilometragem()
 
 Entidade: Local
-Atributos: ID(INT); Nome (VARCHAR); Endereço(VARCHAR); CEP(SMALLINT)
+Atributos: id_local(); local_retirada(); local_devolucao
 
 Relacionamentos:
-Cliente (1:1) ------> Alugar
-Alugar (1:1) -------->   Contrato_Aluguel
-Veículo (1:1) ----------> Local
+
 
 ```
 
@@ -27,25 +22,25 @@ Veículo (1:1) ----------> Local
 
 ```
 Entidade: Cliente
-Atributo: ID(INT); Nome(VARCHAR); CPF/CNPJ(INT); Endereço(TEXT); Dados Bancários(VARCHAR); Telefone(INT); CEP(INT); Gênero(CHAR); RG(VARCHAR); Email(VARCHAR)
+Atributo: id_cliente(); nome(); cpf(); telefone(); email()
 
 Entidade: Produto 
-Atributo: ID(INT); Tipo(SMALLINT); Valor(DECIMAL); Data/Hora(DATETIME); Qauntidade(SMALLINT); Detalhes(TEXT);
+Atributo: id_produto(); nome_produto(); preco_produto() 
 
 Entidade: Pedido 
-Atributo: ID(INT); Quantidade(DECIMAL); Data/Hora(TIMESTAMP); Frete(VARCHAR); Descrição(TEXT);
+Atributo: id_pedido(); status(); data_pedido(); valor_total()
 
-Entidade: Compra
-Atributo: ID(INT); Data/Hora(DATETIME); Detalhes(TEXT); Produto(VARCHAR); Vendedor(VARCHAR); Quantidade(VARCHAR); Previsão de entrega(TIMESTAMP); 
+Entidade: compra
+Atributo: id_compra(); quantidade() 
 
 Entidade: Pagamento
-Atributo: ID(INT); Local de Pagamento(VARCHAR); Condições(DOUBLE); Valor(DECIMAL); Comprador(VARCHAR); Data/Hora(DATETIME);
+Atributo: id_pagamento(); forma_pagamento(); valor_pagamento(); data_pagamento()
 
 Relacionamentos:
-Ciente (1:N) ----------> Produto
-Produto (N:1) -------------> Pedido
-Pedido (1:1) --------------> Compra
-Compra (1:1) ----------> Pagamento 
+Pedido(1:1) ----> (1:1)Pagamento
+Cliente(1:N) ---> (1:N)Pedido
+Pedido(1:1) ----> (1:1)compra
+Produto(1:1) ---> (1:1)compra
 
 ```
 
@@ -53,26 +48,21 @@ Compra (1:1) ----------> Pagamento
 
 ```
 Entidade: Matrícula
-Atributo: Nome(VARCHAR); ID(INT); RG(INT); CPF(INT); Telefone(VARCHAR); Email(VARCHAR); Endereço(VARCHAR)
+Atributo: id_matricula()
 
 Entidade: Aluno
-Atributa: ID(INT); Nome(VARCHAR); CPF(VARCHAR); Endereço(VARCHAR); Telefone(VARCHAR); Email(VARCHAR)
-
-Entidade: Estuda
-Atributo: ID(INT); Instituição(VARCHAR); Disciplina(VARCHAR)
+Atributa: id_aluno(); nome(); cpf(); telefone(); endereco(); email()
 
 Entidade: Disciplina
-Atributo: ID(INT); Tipo(VARCHAR); Área(VARCHAR); Datas/Horas(VARCHAR)
+Atributo: id_disciplina(); nome_disciplina()
 
 Entidade: Professor
-Atributo: ID(INT); Disciplina(VARCHAR); Nome(VARCHAR); Formação(VARCHAR); Hora de trabalho(VARCHAR); CPF(VARCHAR); Telefone(VARCHAR); Email(VARCHAR);
+Atributo: id_professor(); nome(); cpf(); telefone(); endereco(); email()
 
 Relacionamentos:
-Matrícula (1:1) ------> Aluno
-Aluno (N:1) -------> Estuda
-Estuda (1:N) ---------> Disciplina
-Disciplina (N:N) --------> Professor
-
+Aluno(1:1) ---------> (1:!)Mátricula
+Disciplina(N:1) ----> (N:1)Mátricula
+Professor(1:N) -----> (1:N)Disciplina
 ```
 
 [def]: exercicios_MER_DER.jpg

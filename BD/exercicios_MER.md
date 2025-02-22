@@ -63,7 +63,7 @@ Atributo: id_especialidae(); tipo()
 
 Relacionamentos:
 Consulta(1:1) ----> (1:1)Médico
-Consulta(1:1) ----> (1:1)Paciente
+Consulta(1:N) ----> (1:N)Paciente
 Médico(N:1) ------> (N:1)Especialidade
 ```
 

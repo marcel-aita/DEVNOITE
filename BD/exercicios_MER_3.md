@@ -2,21 +2,21 @@
 
 ```
 Entidade: Técnico 
-Atributos: ID(INT); Nome(VARCHAR); CPF(VARCHAR); Telefone(VARCHAR); Email(VARCHAR); Endereço(VARCHAR); Função(VARCHAR)
+Atributos: id_tecnico(); nome(); cpf(); telefone(); email(); especialidade()
 
 Entidade: Cliente
-Atributos: ID(INT); Nome(VARCHAR); CPF(VARCHAR); Telefone(VARCHAR); Email(VARCHAR); Endereço(VARCHAR)
+Atributos: id_cliente(); nome(); cpf(); telefone(); endereco(); email()
 
 Entidade: Chamado
-Atributos: ID(INT); Data/Hora(DATETIME); Endereço(VARCHAR); Detalhes(VARCHAR)
+Atributos: id_chamado(); titulo_chamado(); prioridade(); status(); data_chamado(); data_aberuta(); data_fechamento()
 
 Entidade: Categoria_Chamado
-Atributos: ID(INT); Tipo(VARCHAR); Detalhes(VARCHAR);
+Atributos: id_categoria(); nome_categoria(); descricao_categoria()
 
 Relacionamentos:
-Técnico (1:N) ------> Cliente
-Cliente (1:N) -------->  Chamado
-Chamado (1:N) ----------> Categoria_Chamado
+Cliente(1:N) ----> ()Chamado
+Técnico ----> Chamado
+Categoria --> Chamado
 
 ```
 
@@ -27,7 +27,13 @@ Entidade: Motorista
 Atributos: ID(INT); Nome(VARCHAR); CPF(VARCHAR); Endereço(VARCHAR); Telefone(VARCHAR); Email(VARCHAR); Carteira_motorista(VARCHAR)
 
 Entidade: Ônibus
-Atributos: ID(INT); Placa(CHAR); Modelo(CHAR); Marca(VARCHAR); Kilometros_rodados(CHAR); 
+Atributos: ID(INT); Placa(CHAR); Modelo(CHAR); Marca(VARCHAR); Kilometros_rodados(CHAR);
+
+Entidade: Ônibus_Motorista
+Atributos: ID(INT); Placa(CHAR); Modelo(CHAR); Marca(VARCHAR); Kilometros_rodados(CHAR);
+
+Entidade: Ônibus_Rota
+Atributos: ID(INT); Placa(CHAR); Modelo(CHAR); Marca(VARCHAR); Kilometros_rodados(CHAR);
 
 Entidade: Rota
 Atributos: ID(INT); Data/Hora(DATETIME); Endereços(VARCHAR)
@@ -36,10 +42,11 @@ Entidade: Parada
 Atributos: ID(INT); Endereço(VARCHAR); Número(TINYINT)
 
 Relacionamentos:
-Motorista (1:1) ------> Ônibus
-Ônibus (1:1) ---------> Rota
-Rota (1:N) -----------> Parada
-
+Ônibus(1:1) ----> (1:1)Ônibus_Motorista
+Motorista(1:1) ------> (1:1)Ônibus_Motorista
+Motorista(N:N) ------> (N:N)Ônibus
+Ônibus(N:N) ---------> (N:N)Ônibus_Rota
+Parada(N:N) ---------> (N:N)Ônibus_Rota
 ```
 
 [def]: exercicios_MER_DER.jpg
