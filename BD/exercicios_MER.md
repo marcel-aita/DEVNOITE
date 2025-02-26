@@ -2,21 +2,21 @@
 
 ```
 Entidade: Paricipante
-Atributos: telefone (VARCHAR); CPF(CHAR); email (VARCHAR); Nome (VARCHAR); Gênero(CHAR); Idade(INT); ID(SMALLINT).
+Atributos: id_participante(INT); nome_participante(VARCHAR); telefone(VARCHAR); cpf(CHAR); email(VARCHAR)
 
 Entidade: Inscrição
-Atributos: Taxa(DECIMAL); Validade(TINYINT); Data(DATETIME); ID(SMALLINT).
+Atributos:id_inscricao(INT); data_inscricao(TIMESTAMP)
 
 Entidade: Evento
-Atributos: Tipo(VARCHAR); Descrição(CHAR); Classificação etária(TINYINT); Nome(VARCHAR); ID(SMALLINT); Local(INT)
+Atributos: id_evento(INT); nome_evento(VARCHAR); descricao(TEXT); data_fim(); data_inicio
 
-Entidade: Fornecedor
-Atributos: ID(SMALLINT); Tipo(VARCHAR); Nome(VARCHAR);
+Entidade: Local
+Atributos: id_local(INT); nome_local(VARCHAR); endereco_local(VARCHAR); capacidade(TEXT)
 
 Relacionamentos:
-Participante (1:1) ------> Inscrição
-Inscrição (1:N) -------->   Evento
-Evento (1:N) ----------> Local
+Participante(1:1) ------> (1:1)Inscrição
+Inscrição(1:N) ---------> (1:N)Evento
+Evento(1:N) ------------> (1:N)Local
 
 ```
 
@@ -24,25 +24,20 @@ Evento (1:N) ----------> Local
 
 ```
 Entidade: Funcionário
-Atributos: Telefone(VARCHAR); ID(SMALLINT); Cargo/Função(VARCHAR); Nome(VARCHAR); Email(VARCHAR); CPF(CHAR); 
-
-Entidade: Cliente
-Atributo: ID(SMALLINT); Nome(VARCHAR); CPF(CHAR); Endereço(VARCHAR); Email(VARCHAR); Telefone(VARCHAR);
-
-Entidade: Pedido 
-Atributo: ID(SMALLINT); Tipo(SMALLINT); Valor(DECIMAL); Data/Hora(DATETIME); Qauntidade(SMALLINT); Detalhes(TEXT);
+Atributos: id_funcionario(INT); nome_fincionario(VARCHAR); telefone(VARCHAR); email(VARCHAR) 
 
 Entidade: Ordem de produção
-Atributo: ID(SMALLINT); Data/Hora(DATETIME); Detalhes(TEXT); Quantidade(SMALLINT); Previsão de entrega(DATETIME); 
+Atributos: id_ordem(INT); nome_ordem(VARCHAR); data_inicio(TIMESTAMP); data_final(TIMESTAMP); valor(DECIMAL)
+
+Entidade: Produto
+Atributos: id_produto(INT); nome_produto(VARCHAR); preco_produto(Decimal)
 
 Entidade: Fornecedor
-Atributo: ID(INT); Tipo(SMALLINT); Nome(VARCHAR);
+Atributo: id_fornecedor(INT); nome_fornecedor(VARCHAR); 
 
 Relacionamentos:
-Funcionário (1:N) ----------> Cliente
-Cliente (1:N) -------------> Pedido
-Pedido (1:1) --------------> Ordem de produção
-Ordem de produção (1:N) ----------> Fornecedor 
+Funcionário(1:N) ----------> (1:N)Ordem de Produção
+Pedido(N:1) --------------> (N:1)Ordem de produção 
 
 ```
 
