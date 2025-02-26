@@ -111,4 +111,44 @@ O encriptamento garante que, mesmo que alguém intercepte os dados, não irá co
 4. Never share your __password__ with other to keep your accounts secure.
 5. A __phising malware__ attack tricks users into providing sensitive information.
 
+- ## 4.
+
+1.  - __Cliente__: "Hello. My name Is Marcel I'm having issues with my computer. Can you herlp me!?
+
+    - __Técnico(Vitor)__: "Sure. What kind of problem are you dealing with?
+    - __Cliente__: "I have lost important files and can't get It back."
+    - __Técnico(Vitor)__: "Did you tried to restart your computer yet?"
+    - __Cliente__: "Yes I do."
+    - __Técnico(Vitor)__: "Do you use windows?"
+    - __Cliente__: "Yes I do."
+    - __Técnico(Vitor)__: "Have you already tried restore a previous version of windows?"
+    - __Cliente__: "No."
+    - __Técnico(Vitor)__: "So, please do It and feedback me after complete."
+    - __Cliente__: "It works! Thank you."
+___
+2.  - __Vitor__: " What happen with my Instagram account, Marcel!?"
+
+    - __Marcel__: "I login in It, because your password Is too weak. Did you use the same for every login you have?"
+    - __Marcel__: "If you do, I recommend you change all your password and make them different form one another." 
+    - __Vitor__: "Thanks my friend!"
+___
+3.  - __Cliente__: "Hi. I just received a suspect e-mail from the bank, ansking form my acces informations." 
+
+    - __Gerente(Vitor)__: "Hi. Our bank never asks for personal information from clients in any channel of comunication. Did you give them your infos?"
+    - __Cliente__: "No I do not."
+    - __Gerente(Vitor)__: "Very well, but I must enphasized that you never give anyone your info. We will never ask you for any password or personal info."
+___
+# Bandwitch
+
+- É uma medida de quantos dados podem ser transferidos em um determinado espaço de tempo.
+
+- Bandwitch is a measurement of how much data can be transferred in a given amount of time.
+
+##
+1. __the router__
+2. __operation system__
+3. __SSD__
+4. __firewall__
+5. __cloud computting__
+
 
