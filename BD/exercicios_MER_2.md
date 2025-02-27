@@ -1,19 +1,23 @@
 # Sistema de Aluguel de Carros(MER)
 
 ```
-TEntidade: Cliente 
-Atributos: Tipo (VARCHAR); Nome(VARCHAR); Gênero(CHAR); ID(INT); Telefone(VARCHAR); Email(VARCHAR); CPF(VARCHAR)
+Entidade: Cliente 
+Atributos: id_cliente(INT); nome_cliente(VARCHAR); cpf(VARCHAR); telefone(VARCHAR); email(VARCHAR); endereco(CHAR)  
 
 Entidade: Contrato_Aluguel
-Atributos: id_contrato(); data_devolucao(); data_retirada()
+Atributos: id_contrato(INT); data_devolucao(TIMESTAMP); data_retirada(TIMESTAMP)
 
 Entidade: Veículo
-Atributos: id_veiculo(); tipo(); marca(); cor(); placa(); quilometragem()
+Atributos: id_veiculo(INT); tipo(VARCHAR); marca(VARCHAR); cor(VARCHAR); placa(CHAR); quilometragem(DECIMAL)
 
 Entidade: Local
-Atributos: id_local(); local_retirada(); local_devolucao
+Atributos: id_local(INT); local_retirada(VARCHAR); local_devolucao(VARCHAR)
 
 Relacionamentos:
+Cliente(1:N) -----> (N:1)Contrato de Aluguel
+Veículo(1:N) -----> (N:1)Contrato de Aluguel
+Local(1:N) -------> (N:1)Contrato de Aluguel(de Retirada)
+Local(1:N) -------> (N:1)Contrato de Aluguel(de Entrega)
 
 
 ```
@@ -38,9 +42,10 @@ Atributo: id_pagamento(); forma_pagamento(); valor_pagamento(); data_pagamento()
 
 Relacionamentos:
 Pedido(1:1) ----> (1:1)Pagamento
-Cliente(1:N) ---> (1:N)Pedido
+Cliente(1:N) ---> (N:1)Pedido
 Pedido(1:1) ----> (1:1)compra
-Produto(1:1) ---> (1:1)compra
+Compra(1:1) ----> (1:1)Pagamento
+
 
 ```
 
