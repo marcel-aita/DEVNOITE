@@ -26,19 +26,19 @@ Local(1:N) -------> (N:1)Contrato de Aluguel(de Entrega)
 
 ```
 Entidade: Cliente
-Atributo: id_cliente(); nome(); cpf(); telefone(); email()
+Atributo: id_cliente(INT); nome(VARCHAR); cpf(VARCHAR); telefone(VARCHAR); email(VARCHAR)
 
 Entidade: Produto 
-Atributo: id_produto(); nome_produto(); preco_produto() 
+Atributo: id_produto(INT); nome_produto(VARCHAR); preco_produto(VARCHAR) 
 
 Entidade: Pedido 
-Atributo: id_pedido(); status(); data_pedido(); valor_total()
+Atributo: id_pedido(INT); status(BOOLEAN); data_pedido(VARCHAR); valor_total(DECIMAL)
 
 Entidade: compra
-Atributo: id_compra(); quantidade() 
+Atributo: id_compra(INT); quantidade(VARCHAR) 
 
 Entidade: Pagamento
-Atributo: id_pagamento(); forma_pagamento(); valor_pagamento(); data_pagamento()
+Atributo: id_pagamento(INT); forma_pagamento(VARCHAR); valor_pagamento(DECIMAL); data_pagamento(TIMESTAMP)
 
 Relacionamentos:
 Pedido(1:1) ----> (1:1)Pagamento
