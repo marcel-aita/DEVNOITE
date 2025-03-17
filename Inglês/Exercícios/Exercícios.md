@@ -143,12 +143,16 @@ ___
 - É uma medida de quantos dados podem ser transferidos em um determinado espaço de tempo.
 
 - Bandwitch is a measurement of how much data can be transferred in a given amount of time.
+__
 
-##
 1. __the router__
 2. __operation system__
 3. __SSD__
 4. __firewall__
 5. __cloud computting__
+___
 
-
+1. I am studying software development in Senac at night 
+2. I'm close to finish my first semester
+3. In my first year at Senac I studied Java language
+4. Right now I'm taking data base classes with MySql Workbench
