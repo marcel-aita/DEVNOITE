@@ -156,3 +156,13 @@ ___
 2. I'm close to finish my first semester
 3. In my first year at Senac I studied Java language
 4. Right now I'm taking data base classes with MySql Workbench
+
+___
+
+# Descrição Site
+ - Aliexpres
+    - Aliexpres is a B2C(Business-to-Consumer) platfotm. It opoerates primarily connecting international buyers with sellers (mostly from China), but It also supports C2C(Consumer-to-Consumer) transaction, allowing individual seller to offer prducts directly to consumers.
+    
+    1. Aliexpres is a B2B platform.
+    2. It also provides support to C2C businnes models, allowing individual sellers to offer products directly to consumers.
+    3.  
