@@ -65,7 +65,7 @@ Entidade: Professor
 Atributo: id_professor(); nome(); cpf(); telefone(); endereco(); email()
 
 Relacionamentos:
-Aluno(1:1) ---------> (1:!)Mátricula
+Aluno(1:1) ---------> (1:1)Mátricula
 Disciplina(N:1) ----> (N:1)Mátricula
 Professor(1:N) -----> (1:N)Disciplina
 ```
