@@ -165,4 +165,8 @@ ___
     
     1. Aliexpres is a B2B platform.
     2. It also provides support to C2C businnes models, allowing individual sellers to offer products directly to consumers.
-    3.  
+
+___
+
+# Amazon
+ - Amazon.com offers a variety of products since furniture for your home to eletronics, like pc hardware and softwares. It's possible to find anything in Amazon for a affordable price. The prices and discounts ussualy offered are competitive with many other online market business. The website accepts any payment method, credit cards, debit cards, cash transfers, third party payment websites (like paypal) and many others. Users can evaluate the products tha they achieve, It can be a good or a bad evaluations deppending on the client experience with the respective product. Amazon return policy depends on the retailer policy and conditions to return a product, but Amazon Itself have a policy have a return policy for any product hosted on the website. 
