@@ -2,16 +2,16 @@
 
 ```
 Entidade: Técnico 
-Atributos: id_tecnico(); nome(); cpf(); telefone(); email()
+Atributos: id_tecnico(INT); nome(VARCHAR); cpf(VARCHAR); telefone(VARCHAR); email(VARCHAR)
 
 Entidade: Cliente
-Atributos: id_cliente(); nome(); cpf(); telefone(); endereco(); email()
+Atributos: id_cliente(INT); nome(VARCHAR); cpf(VARCHAR); telefone(VARCHAR); endereco(VARCHAR); email()
 
 Entidade: Chamado
-Atributos: id_chamado(); titulo_chamado(); prioridade(); status(); data_chamado(); data_aberuta(); data_fechamento()
+Atributos: id_chamado(INT); titulo_chamado(VARCHAR); prioridade(BOOLEAN); status(BOOLEAN); data_chamado(); data_aberuta(TIMESTAMP); data_fechamento(TIMESTAMP)
 
 Entidade: Categoria_Chamado
-Atributos: id_categoria(); nome_categoria(); descricao_categoria()
+Atributos: id_categoria(INT); nome_categoria(VARCHAR); descricao_categoria(VARCHAR)
 
 Relacionamentos:
 Cliente(1:N) ----> (1:N)Chamado

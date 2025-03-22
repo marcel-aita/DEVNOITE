@@ -53,16 +53,16 @@ Compra(1:1) ----> (1:1)Pagamento
 
 ```
 Entidade: Matrícula
-Atributo: id_matricula()
+Atributo: id_matricula(INT)
 
 Entidade: Aluno
-Atributa: id_aluno(); nome(); cpf(); telefone(); endereco(); email()
+Atributa: id_aluno(INT); nome(VARCHAR); cpf(VARCHAR); telefone(VARCHAR); endereco(VARCHAR); email(VARCHAR)
 
 Entidade: Disciplina
-Atributo: id_disciplina(); nome_disciplina()
+Atributo: id_disciplina(INT); nome_disciplina(VARCHAR)
 
 Entidade: Professor
-Atributo: id_professor(); nome(); cpf(); telefone(); endereco(); email()
+Atributo: id_professor(INT); nome(VARCHAR); cpf(VARCHAR); telefone(VARCHAR); endereco(VARCHAR); email(VARCHAR)
 
 Relacionamentos:
 Aluno(1:1) ---------> (1:1)Mátricula
