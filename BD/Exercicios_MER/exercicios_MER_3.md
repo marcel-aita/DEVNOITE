@@ -2,7 +2,7 @@
 
 ```
 Entidade: Técnico 
-Atributos: id_tecnico(); nome(); cpf(); telefone(); email(); especialidade()
+Atributos: id_tecnico(); nome(); cpf(); telefone(); email()
 
 Entidade: Cliente
 Atributos: id_cliente(); nome(); cpf(); telefone(); endereco(); email()
@@ -14,9 +14,9 @@ Entidade: Categoria_Chamado
 Atributos: id_categoria(); nome_categoria(); descricao_categoria()
 
 Relacionamentos:
-Cliente(1:N) ----> ()Chamado
-Técnico ----> Chamado
-Categoria --> Chamado
+Cliente(1:N) ----> (1:N)Chamado
+Técnico(1:N) ----> (1:N)Chamado
+Categoria(N:1) --> (N:1)Chamado
 
 ```
 
