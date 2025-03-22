@@ -42,7 +42,7 @@ Entidade: Parada
 Atributos: ID(INT); Endereço(VARCHAR); Número(TINYINT)
 
 Relacionamentos:
-Ônibus(1:1) ----> (1:1)Ônibus_Motorista
+Ônibus(1:1) ---------> (1:1)Ônibus_Motorista
 Motorista(1:1) ------> (1:1)Ônibus_Motorista
 Motorista(N:N) ------> (N:N)Ônibus
 Ônibus(N:N) ---------> (N:N)Ônibus_Rota
