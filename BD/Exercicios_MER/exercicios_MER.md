@@ -37,7 +37,8 @@ Atributo: id_fornecedor(INT); nome_fornecedor(VARCHAR);
 
 Relacionamentos:
 Funcionário(1:N) ----------> (1:N)Ordem de Produção
-Pedido(N:1) --------------> (N:1)Ordem de produção 
+Pedido(N:1) ---------------> (N:1)Ordem de produção
+Fornecedor(N:N) -----------> (N:N)Produto
 
 ```
 
