@@ -17,7 +17,7 @@ Relacionamentos:
 Cliente(1:N) -----> (N:1)Contrato de Aluguel
 Veículo(1:N) -----> (N:1)Contrato de Aluguel
 Local(1:N) -------> (N:1)Contrato de Aluguel(de Retirada)
-Local(1:N) -------> (N:1)Contrato de Aluguel(de Entrega)
+Local(1:N) -------> (N:1)Contrato de Aluguel(de Entrega),
 
 
 ```
