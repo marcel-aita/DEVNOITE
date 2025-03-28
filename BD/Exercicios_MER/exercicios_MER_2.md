@@ -11,7 +11,7 @@ Entidade: Veículo
 Atributos: id_veiculo(INT); tipo(VARCHAR); marca(VARCHAR); cor(VARCHAR); placa(CHAR); quilometragem(DECIMAL)
 
 Entidade: Local
-Atributos: id_local(INT); local_retirada(VARCHAR); local_devolucao(VARCHAR)
+Atributos: id_local(INT); rua(varchar), cidade(varchar), estado(varcahr), cep(varchar), numero(varchar)
 
 Relacionamentos:
 Cliente(1:N) -----> (N:1)Contrato de Aluguel

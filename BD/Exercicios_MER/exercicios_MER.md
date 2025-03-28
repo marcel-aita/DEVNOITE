@@ -55,12 +55,12 @@ Entidade: Médico
 Atributo: id_medico(INT); nome_medico(VARCHAR); crm(CHAR); telefone(VARCHAR); email() 
 
 Entidade: Especialidade
-Atributo: id_especialidae(); tipo()
+Atributo: id_especialidae(INT); nome_especialidade(VARCHAR); descricao(TEXT)
 
 Relacionamentos:
 Consulta(1:1) ----> (1:1)Médico
 Consulta(1:N) ----> (1:N)Paciente
-Médico(N:1) ------> (N:1)Especialidade
+Médico(N:N) ------> (N:N)Especialidade
 ```
 
 [def]: exercicios_MER_DER.jpg
