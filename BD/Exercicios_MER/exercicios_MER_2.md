@@ -43,8 +43,8 @@ Atributo: id_pagamento(INT); forma_pagamento(VARCHAR); valor_pagamento(DECIMAL);
 Relacionamentos:
 Pedido(1:1) ----> (1:1)Pagamento
 Cliente(1:N) ---> (N:1)Pedido
-Pedido(1:1) ----> (1:1)compra
-Compra(1:1) ----> (1:1)Pagamento
+Pedido(N:N) ----> (N:N)compra
+Compra(N:N) ----> (N:N)Pagamento
 
 
 ```
@@ -66,7 +66,7 @@ Atributo: id_professor(INT); nome(VARCHAR); cpf(VARCHAR); telefone(VARCHAR); end
 
 Relacionamentos:
 Aluno(1:1) ---------> (1:1)Mátricula
-Disciplina(N:1) ----> (N:1)Mátricula
+Disciplina(N:N) ----> (N:N)Mátricula
 Professor(1:N) -----> (1:N)Disciplina
 ```
 
