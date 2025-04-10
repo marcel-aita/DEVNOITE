@@ -44,7 +44,7 @@ Atributos: ID(INT); Endereço(VARCHAR); Número(VARCHAR)
 Relacionamentos:
 Motorista(N:N) ------> (N:N)Ônibus
 Ônibus(N:N) ---------> (N:N)Rota
-Rota(1:N) -----------> (1:N)Parada-
+Rota(1:N) -----------> (1:N)Parada
 ```
 
 [def]: exercicios_MER_DER.jpg
