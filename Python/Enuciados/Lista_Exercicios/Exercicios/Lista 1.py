@@ -1,17 +1,54 @@
 #Crie um programa que imprima o seu nome completo,
 # sua idade e sua cidade em linhas separadas.
 
-nome = input("Digite seu nome: ")
-idade = input("Digite sua idade: ")
-cep = input("Digite seu endereço: ")
-print ("nome\!n")
-print (idade"\n")
-print (cep) 
+def exe1():
+
+    nome = input("Digite seu nome: ") #input (nome)
+    idade = input("Digite sua idade: ") #input (idade)
+    cep = input("Digite seu endereço: ") #input (cep)
+    print (f"Nome: {nome}") 
+    print (f"Idade: {idade}") 
+    print (f"Endereço: {cep}")
+    #_Dados em coluna
 
 #Crie um programa como o programa anterior, porém mostre todas
 # as informações em uma #única linha, separadas por vírgulas.
 
-nome = input("Digite seu nome: ")
-idade = input("Digite sua idade: ")
-cep = input("Digite seu endereço: ")
-print (f"{nome}, {idade}, {cep}") 
+def exe2():
+    nome = input("Digite seu nome: ") #input (nome)
+    idade = input("Digite sua idade: ") #input (idade)
+    cep = input("Digite seu endereço: ") #input (cep)
+    print ("Seus dados: " " " f"{nome}" "," " " f"{idade}" "," " " f"{cep}") #Dados em linha
+
+#Crie um programa que imprima uma tabela simples, com duas colunas: 
+# "Nome" e "Idade". Preencha a tabela com os dados de 3 pessoas.
+
+def exe3():
+    nome = input("Digite seu nome: ") #input (nome)
+    idade = input("Digite sua idade: ") #input (idade)
+    print ("\n--- Tabela de dados ---")
+    print ({nome}"\t"{idade}")
+
+while True:
+    print("\n--- Menu de Seleção ---")
+    print("Escolha o que você quer ver:")
+    print("1 - exe1")
+    print("2 - exe2")
+    print("3 - exe3'")
+     
+    print("0 - sair")
+
+    opcao = input("Digite sua opçâo: ")
+
+    if opcao == '1':
+        exe1()
+    elif opcao == '2':
+        exe2()
+    elif opcao == '3':
+        exe3()
+    elif opcao == '0':
+        print("Saindo do programa.")
+        break
+    else:
+        print("Opçâ onválida. Por favor, digite um número válido do menu.")
+
