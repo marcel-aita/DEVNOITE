@@ -24,11 +24,22 @@ def exe2():
 # "Nome" e "Idade". Preencha a tabela com os dados de 3 pessoas.
 
 def exe3():
-    nome = input("Digite seu nome: ") #input (nome)
-    idade = input("Digite sua idade: ") #input (idade)
-    print ("\n--- Tabela de dados ---")
-    print ({nome}"\t"{idade}")
-
+    dados = []  # Lista para armazenar os dados
+    
+    # Coletar dados de 3 pessoas
+    for i in range(3):
+        print(f"\nPessoa {i + 1}:")
+        nome = input("Digite o nome: ")
+        idade = input("Digite a idade: ")
+        dados.append((nome, idade))  # Adiciona à lista como tupla (nome, idade)
+    
+    # Exibir a tabela no final
+    print("\n--- Tabela de Dados ---")
+    print("Nome\t\tIdade")  # Cabeçalho
+    print("-" * 20)  # Linha separadora
+    for nome, idade in dados:
+        print(f"{nome}\t\t{idade}")
+        
 while True:
     print("\n--- Menu de Seleção ---")
     print("Escolha o que você quer ver:")
