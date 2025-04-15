@@ -169,4 +169,23 @@ ___
 ___
 
 # Amazon
- - Amazon.com offers a variety of products since furniture for your home to eletronics, like pc hardware and softwares. It's possible to find anything in Amazon for a affordable price. The prices and discounts ussualy offered are competitive with many other online market business. The website accepts any payment method, credit cards, debit cards, cash transfers, third party payment websites (like paypal) and many others. Users can evaluate the products tha they achieve, It can be a good or a bad evaluations deppending on the client experience with the respective product. Amazon return policy depends on the retailer policy and conditions to return a product, but Amazon Itself have a policy have a return policy for any product hosted on the website. 
+ - Amazon.com offers a variety of products since furniture for your home to eletronics, like pc hardware and softwares. It's possible to find anything in Amazon for a affordable price. The prices and discounts ussualy offered are competitive with many other online market business. The website accepts any payment method, credit cards, debit cards, cash transfers, third party payment websites (like paypal) and many others. Users can evaluate the products tha they achieve, It can be a good or a bad evaluations deppending on the client experience with the respective product. Amazon return policy depends on the retailer policy and conditions to return a product, but Amazon Itself have a policy have a return policy for any product hosted on the website.
+
+___
+
+# Match the terms with the correct definition
+
+## Answers
+- a. (5)
+- b. (10)
+- c. (1)
+- d. (4)
+- e. (7)
+- f. (9)
+- g. (8)
+- h. (6)
+- i. (2)
+- j. (3)
+
+___
+
