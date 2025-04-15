@@ -12,7 +12,7 @@ def exe1():
     #_Dados em coluna
 
 #Crie um programa como o programa anterior, porém mostre todas
-# as informações em uma #única linha, separadas por vírgulas.
+# as informações em uma única linha, separadas por vírgulas.
 
 def exe2():
     nome = input("Digite seu nome: ") #input (nome)
@@ -24,21 +24,17 @@ def exe2():
 # "Nome" e "Idade". Preencha a tabela com os dados de 3 pessoas.
 
 def exe3():
-    dados = []  # Lista para armazenar os dados
-    
-    # Coletar dados de 3 pessoas
-    for i in range(3):
-        print(f"\nPessoa {i + 1}:")
-        nome = input("Digite o nome: ")
-        idade = input("Digite a idade: ")
-        dados.append((nome, idade))  # Adiciona à lista como tupla (nome, idade)
-    
-    # Exibir a tabela no final
+    nome1 = input("Digite o primeiro nome: ") 
+    idade1 = input("Digite a primeira idade: ")
+    nome2 = input("Digite o segundo nome: ")
+    idade2 = input("Digite a segunda idade: ")
+    nome3 = input("Digite o terceiro nome: ")
+    idade3 = input("Digite a terceira idade: ")
+
     print("\n--- Tabela de Dados ---")
-    print("Nome\t\tIdade")  # Cabeçalho
-    print("-" * 20)  # Linha separadora
-    for nome, idade in dados:
-        print(f"{nome}\t\t{idade}")
+    print(f"{nome1} {idade1}")  # Adicione 'f' antes da string para formatar
+    print(f"{nome2} {idade2}")
+    print(f"{nome3} {idade3}")
         
 while True:
     print("\n--- Menu de Seleção ---")

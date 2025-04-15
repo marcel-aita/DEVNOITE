@@ -25,19 +25,20 @@
 8. IDE (Integrated Developer Enviroment)
 
 ```
+
 # To be
 
-1. I hope I can finish this course and get a good job soon as possible. 
+1. I hope I can finish this course and get a good job soon as possible.
 2. I do know how to wrigth a code in Java, but I don't fill confortable doing It yet.
 3. We don't finish the first semester with all colleagues still in class.
 4. I often have difficulty sleeping well.
-6. You are a good english teacher.(To Be)
-7. We need to maintain frequency In P.I. classes In order to finish the course In regular time.
-8. Do Senac administration, couldn't gift us with a great discount before graduation?
-9. I am not a good programmer yet
-10. She went late at home yesterday
-11. Does he knows how to programme a code line
-12. He doesnt't make any exercize today in class.
+5. You are a good english teacher.(To Be)
+6. We need to maintain frequency In P.I. classes In order to finish the course In regular time.
+7. Do Senac administration, couldn't gift us with a great discount before graduation?
+8. I am not a good programmer yet
+9. She went late at home yesterday
+10. Does he knows how to programme a code line
+11. He doesnt't make any exercize today in class.
 
 # Comparativos
 
@@ -52,6 +53,7 @@ Portable | Expensive | Visual
 Important | Easy | Fast
 
 ```
+
 - ## Exercício 1
 
 1. Python Is __easier__ than C++
@@ -107,85 +109,99 @@ O encriptamento garante que, mesmo que alguém intercepte os dados, não irá co
 
 1. To protect your files, always use a __external drive__ as a secondary copy. (__Redundancy__)
 2. A __antivirus__ helps prevent unauthorized access to a network. (__Firewall__)
-3. If you data is __encrypted__, only authorized users can read It. 
+3. If you data is __encrypted__, only authorized users can read It.
 4. Never share your __password__ with other to keep your accounts secure.
 5. A __phising malware__ attack tricks users into providing sensitive information.
 
 - ## 4.
 
-1.  - __Cliente__: "Hello. My name Is Marcel I'm having issues with my computer. Can you herlp me!?
+1. - __Cliente__: "Hello. My name Is Marcel I'm having issues with my computer. Can you herlp me!?
+   - __Técnico(Vitor)__: "Sure. What kind of problem are you dealing with?
+   - __Cliente__: "I have lost important files and can't get It back."
+   - __Técnico(Vitor)__: "Did you tried to restart your computer yet?"
+   - __Cliente__: "Yes I do."
+   - __Técnico(Vitor)__: "Do you use windows?"
+   - __Cliente__: "Yes I do."
+   - __Técnico(Vitor)__: "Have you already tried restore a previous version of windows?"
+   - __Cliente__: "No."
+   - __Técnico(Vitor)__: "So, please do It and feedback me after complete."
+   - __Cliente__: "It works! Thank you."
 
-    - __Técnico(Vitor)__: "Sure. What kind of problem are you dealing with?
-    - __Cliente__: "I have lost important files and can't get It back."
-    - __Técnico(Vitor)__: "Did you tried to restart your computer yet?"
-    - __Cliente__: "Yes I do."
-    - __Técnico(Vitor)__: "Do you use windows?"
-    - __Cliente__: "Yes I do."
-    - __Técnico(Vitor)__: "Have you already tried restore a previous version of windows?"
-    - __Cliente__: "No."
-    - __Técnico(Vitor)__: "So, please do It and feedback me after complete."
-    - __Cliente__: "It works! Thank you."
-___
-2.  - __Vitor__: " What happen with my Instagram account, Marcel!?"
+---
 
-    - __Marcel__: "I login in It, because your password Is too weak. Did you use the same for every login you have?"
-    - __Marcel__: "If you do, I recommend you change all your password and make them different form one another." 
-    - __Vitor__: "Thanks my friend!"
-___
-3.  - __Cliente__: "Hi. I just received a suspect e-mail from the bank, ansking form my acces informations." 
+2. - __Vitor__: " What happen with my Instagram account, Marcel!?"
+   - __Marcel__: "I login in It, because your password Is too weak. Did you use the same for every login you have?"
+   - __Marcel__: "If you do, I recommend you change all your password and make them different form one another."
+   - __Vitor__: "Thanks my friend!"
 
-    - __Gerente(Vitor)__: "Hi. Our bank never asks for personal information from clients in any channel of comunication. Did you give them your infos?"
-    - __Cliente__: "No I do not."
-    - __Gerente(Vitor)__: "Very well, but I must enphasized that you never give anyone your info. We will never ask you for any password or personal info."
-___
+---
+
+3. - __Cliente__: "Hi. I just received a suspect e-mail from the bank, ansking form my acces informations."
+   - __Gerente(Vitor)__: "Hi. Our bank never asks for personal information from clients in any channel of comunication. Did you give them your infos?"
+   - __Cliente__: "No I do not."
+   - __Gerente(Vitor)__: "Very well, but I must enphasized that you never give anyone your info. We will never ask you for any password or personal info."
+
+---
+
 # Bandwitch
 
 - É uma medida de quantos dados podem ser transferidos em um determinado espaço de tempo.
-
 - Bandwitch is a measurement of how much data can be transferred in a given amount of time.
-__
+  __
 
 1. __the router__
 2. __operation system__
 3. __SSD__
 4. __firewall__
 5. __cloud computting__
-___
 
-1. I am studying software development in Senac at night 
+---
+
+1. I am studying software development in Senac at night
 2. I'm close to finish my first semester
 3. In my first year at Senac I studied Java language
 4. Right now I'm taking data base classes with MySql Workbench
 
-___
+---
 
 # Descrição Site
- - Aliexpres
-    - Aliexpres is a B2C(Business-to-Consumer) platfotm. It opoerates primarily connecting international buyers with sellers (mostly from China), but It also supports C2C(Consumer-to-Consumer) transaction, allowing individual seller to offer prducts directly to consumers.
-    
-    1. Aliexpres is a B2B platform.
-    2. It also provides support to C2C businnes models, allowing individual sellers to offer products directly to consumers.
 
-___
+- Aliexpres
+
+  - Aliexpres is a B2C(Business-to-Consumer) platfotm. It opoerates primarily connecting international buyers with sellers (mostly from China), but It also supports C2C(Consumer-to-Consumer) transaction, allowing individual seller to offer prducts directly to consumers.
+
+  1. Aliexpres is a B2B platform.
+  2. It also provides support to C2C businnes models, allowing individual sellers to offer products directly to consumers.
+
+---
 
 # Amazon
- - Amazon.com offers a variety of products since furniture for your home to eletronics, like pc hardware and softwares. It's possible to find anything in Amazon for a affordable price. The prices and discounts ussualy offered are competitive with many other online market business. The website accepts any payment method, credit cards, debit cards, cash transfers, third party payment websites (like paypal) and many others. Users can evaluate the products tha they achieve, It can be a good or a bad evaluations deppending on the client experience with the respective product. Amazon return policy depends on the retailer policy and conditions to return a product, but Amazon Itself have a policy have a return policy for any product hosted on the website.
 
-___
+- Amazon.com offers a variety of products since furniture for your home to eletronics, like pc hardware and softwares. It's possible to find anything in Amazon for a affordable price. The prices and discounts ussualy offered are competitive with many other online market business. The website accepts any payment method, credit cards, debit cards, cash transfers, third party payment websites (like paypal) and many others. Users can evaluate the products tha they achieve, It can be a good or a bad evaluations deppending on the client experience with the respective product. Amazon return policy depends on the retailer policy and conditions to return a product, but Amazon Itself have a policy have a return policy for any product hosted on the website.
+
+---
 
 # Match the terms with the correct definition
 
 ## Answers
-- a. (5)
-- b. (10)
-- c. (1)
-- d. (4)
-- e. (7)
-- f. (9)
-- g. (8)
-- h. (6)
-- i. (2)
-- j. (3)
 
-___
+> - a. (5)
+> - b. (10)
+> - c. (1)
+> - d. (4)
+> - e. (7)
+> - f. (9)
+> - g. (8)
+> - h. (6)
+> - i. (2)
+> - j. (3)
 
+---
+
+# Extra Writing Task - Use Past Tense
+
+## Answer
+
+> "Last weekend I went out on saturday with some of my friends. We drink some beers, played videogames and watched videos on YouTube. On sunday I spent the whole day sleeping to relax before starting another working week.
+
+---
