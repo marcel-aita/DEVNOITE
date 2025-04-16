@@ -202,6 +202,17 @@ O encriptamento garante que, mesmo que alguém intercepte os dados, não irá co
 
 ## Answer
 
-> "Last weekend I went out on saturday with some of my friends. We drink some beers, played videogames and watched videos on YouTube. On sunday I spent the whole day sleeping to relax before starting another working week.
+> "Last weekend I went out on Saturday with some of my friends. We drank some beers, played videogames and watched videos on YouTube. On Sunday I spent the whole day sleeping to relax before starting another working week.
+
+---
+
+### Corrections
+
+> This week my home router wasn't working well - It was really slow, so I needed to depend of my mobile internet. When I ran out of internet, I needed to ask my mom to route her mobile internet for me. In the next day, the wi-fi signal was restored, but It was unstable so I had problems to contact people - I still needed to ask some friends to use their mobile internet for me
+
+> Last class I learned about python logic, how to use It's syntax and also had experience practing this new coding language. I realized that this knowledge could be nescessary for my future personal project - I'm working on an Investor dashboard where anyone can find data about Stocks, Bonds, ETFs, Treasure etc. The system will focus in fundamental data, but in the future I plan to Implemment automatic orders, where the user can buy and sell financial products automatically through the system.
+
+> Last class was about logic with Python and It's syntax. I worked on my project, using Python - wich is faster and more efficient. I confess tha I had some issues with this new sytax, but I'm willing to learn more and immprove myself through books.
+
 
 ---

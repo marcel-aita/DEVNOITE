@@ -35,13 +35,24 @@ def exe3():
     print(f"{nome1} {idade1}")  # Adicione 'f' antes da string para formatar
     print(f"{nome2} {idade2}")
     print(f"{nome3} {idade3}")
+
+#Crie um programa que peça ao usuário para digitar seu nome e, 
+#em seguida, imprima uma mensagem de boas-vindas personalizada, 
+# utilizando o nome digitado
+
+def exe4():
+    nome = input("Digite seu nome: ")
+
+    print("Olá" " " f"{nome}" " " "sinta-se em casa.")
+
         
 while True:
     print("\n--- Menu de Seleção ---")
     print("Escolha o que você quer ver:")
     print("1 - exe1")
     print("2 - exe2")
-    print("3 - exe3'")
+    print("3 - exe3")
+    print("4 - exe4")
      
     print("0 - sair")
 
@@ -53,6 +64,8 @@ while True:
         exe2()
     elif opcao == '3':
         exe3()
+    elif opcao == '4':
+        exe4()    
     elif opcao == '0':
         print("Saindo do programa.")
         break
