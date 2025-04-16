@@ -45,6 +45,12 @@ def exe4():
 
     print("Olá" " " f"{nome}" " " "sinta-se em casa.")
 
+#Crie um programa que peça ao usuário que digite dois números decimais. 
+# Calcule e exiba a soma dos dois números.
+
+def exe5():
+        
+
         
 while True:
     print("\n--- Menu de Seleção ---")
@@ -53,6 +59,7 @@ while True:
     print("2 - exe2")
     print("3 - exe3")
     print("4 - exe4")
+    print("5 - exe5")
      
     print("0 - sair")
 
@@ -65,7 +72,9 @@ while True:
     elif opcao == '3':
         exe3()
     elif opcao == '4':
-        exe4()    
+        exe4()
+    elif opcao == '5':
+        exe5    
     elif opcao == '0':
         print("Saindo do programa.")
         break
