@@ -49,8 +49,50 @@ def exe4():
 # Calcule e exiba a soma dos dois números.
 
 def exe5():
-        
+    numero1 = int(input("Digite um número: "))
+    numero2 = int(input("Digite outro número: "))
+    
+    print(f"{numero1} + {numero2} = {numero1 + numero2}")
+ 
 
+#Crie um programa que peça ao usuário que digite dois números decimais. 
+# Calcule e exiba a multiplicação dos dois números
+
+def exe6():
+    numero1 = int(input("Digite um número: "))
+    numero2 = int(input("Digite outro número: "))
+    
+    print(f"{numero1} x {numero2} = {numero1 * numero2}")
+
+#Crie um programa que calcule a área de um retângulo. 
+# Peça ao usuário para digitar a base e a altura, e imprima o resultado.
+
+def exe7():
+    base = float(input("Digite a base do retângulo: "))
+    altura = float(input("Digite a altura do retângulo: "))
+
+    print(f"{base} x {altura} = {base * altura}")
+
+#Crie um programa que peça ao usuário que digite 4 notas de uma disciplina.
+
+def exe8():
+    nota1 = float(input("Digite a primeira nota: "))
+    nota2 = float(input("Digite a segunda nota: "))
+    nota3 = float(input("Digite a terceira nota: "))
+    nota4 = float(input("Digite a quarta nota: "))
+
+    print(f"{nota1} {nota2}")
+    print(f"{nota3} {nota4}")
+
+#Calcule e exiba a média das notas.
+
+def exe9():
+    nota1 = float(input("Digite a primeira nota: "))
+    nota2 = float(input("Digite a segunda nota: "))
+    nota3 = float(input("Digite a terceira nota: "))
+    nota4 = float(input("Digite a quarta nota: "))
+
+    print(f"{nota1 + nota2 + nota3 + nota4/4} ")
         
 while True:
     print("\n--- Menu de Seleção ---")
@@ -60,6 +102,10 @@ while True:
     print("3 - exe3")
     print("4 - exe4")
     print("5 - exe5")
+    print("6 - exe6")
+    print("7 - exe7")
+    print("8 - exe8")
+    print("9 - exe9")
      
     print("0 - sair")
 
@@ -74,7 +120,15 @@ while True:
     elif opcao == '4':
         exe4()
     elif opcao == '5':
-        exe5    
+        exe5()
+    elif opcao == '6':
+        exe6()
+    elif opcao == '7':
+        exe7()
+    elif opcao == '8':
+        exe8()
+    elif opcao == '9':
+        exe9()    
     elif opcao == '0':
         print("Saindo do programa.")
         break
