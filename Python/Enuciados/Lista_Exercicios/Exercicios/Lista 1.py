@@ -110,15 +110,49 @@ def exe10():
     numero_de_caracteres = len(minha_string)
     print(f"Número de caracteres em '{minha_string}': {numero_de_caracteres}")
 
+#Crie um programa que peça ao usuário para digitar uma frase contendo uma palavra 
+#maiúscula, converta essa palavra para minúsculas e exiba o resultado.
+
 def exe11():
-    print("\n--- Conversão de caracter ---")
-    texto_mundo = "OLÁ DEV! BORA PROGRAMAR!?"
-    texto_minusculo = texto_mundo.lower()
-    print(f"'{texto_mundo}' em mainúsculo: {texto_minusculo}")
-    texto_mundo_lower = "olá dev! bora programar!?"
-    texto_maiusculo = texto_mundo_lower.upper()
-    print(f"{texto_mundo_lowe}' em maiúsculo: {texto_maiusculo}")
+    print("\n--- Conversão para minúsculo ---")
+    texto = str(input("Digite seu texto: "))
+    texto_minusculo = texto.lower()
+    print(f" '{texto}' em minúsculo: {texto_minusculo}")
+
+#Crie um programa que peça ao usuário para digitar uma frase contendo uma palavra 
+#minúscula, converta essa palavra para maiúscula e exiba o resultado.
+
+def exe12():
+    print("--- Conversão para maiúsculo ---")
+    texto = str(input("Digite seu texto: "))
+    texto_maiusculo = textp.upper()
+    print(f" '{texto}' em maiúsculo: {texto_maiusculo}")
+
+#Crie um programa que remova todas as ocorrências de um caractere específico da string 
+#digitada pelo usuário. Solicite ao usuário para digitar o caractere a ser removido.
+
+def exe13():
+    print("-- Remoção de caracter ---")
+    #texto = input("Digite uma string: ")
+    texto =  input("Digite seu texto: ")
+    #caractere_remover = "a" 
+    caracter_removido = "a"
+    #texto_modificado = texto.replace(caractere_remover, "")
+    texto_novo = texto.replace(caracter_removido, "")
+    #print(f"String original: {texto}")
+    #print(f"Caractere a ser removido: '{caractere_remover}'")
+    #print(f"String modificada: {texto_modificado}")
+    print(f"{texto_novo}")
+
+    #---- Coreção do Deepseak ----
+    #print("\n--- Remoção do caractere 'a' ---")  # Avisa qual caractere será removido
+    #texto = input("Digite uma frase: ")
+    #caractere_pre_definido = "a"  # Caractere pré-definido (pode ser alterado)
+    #texto_modificado = texto.replace(caractere_pre_definido, "")
+    #print(f"Resultado: {texto_modificado}")  # Mostra apenas a string modificada
     
+
+
         
 while True:
     print("\n--- Menu de Seleção ---")
@@ -133,6 +167,9 @@ while True:
     print("8 - exe8")
     print("9 - exe9")
     print("10 - exe10")
+    print("11 - exe11")
+    print("12 - exe12")
+    print("13 - exe13")
      
     print("0 - sair")
 
@@ -158,9 +195,15 @@ while True:
         exe9()
     elif opcao == '10':
         exe10()
+    elif opcao == '11':
+        exe11()
+    elif opcao == '12':
+        exe12()
+    elif opcao == '13':
+        exe13()
     elif opcao == '0':
         print("Saindo do programa.")
         break
     else:
-        print("Opçâ onválida. Por favor, digite um número válido do menu.")
+        print("Opção onválida. Por favor, digite um número válido do menu.")
 
