@@ -1,0 +1,1 @@
+from exercicios_OperadoresLogicos.menu_Op import menu_lista
