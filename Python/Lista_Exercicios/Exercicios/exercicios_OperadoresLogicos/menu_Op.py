@@ -1,4 +1,4 @@
-from ListaOp import exe1, exe2, exe3, exe4, exe5, exe6, exe7, exe8, exe9, exe10, exe11, exe12, exe13
+from ListaOp import exe1, exe2 #, exe3, exe4, exe5, exe6, exe7, exe8, exe9, exe10, exe11, exe12, exe13
 
 def menu_lista():    
     while True:

@@ -4,7 +4,7 @@
 def exe1():
     print("\n--- Verificação de Idade ---")
     idade = int(input("Digite sua idade: ")) #input (idade)
-    estudante = int(input("Digite 1 para 'SIM,SOU ESTUDANTE' ou 0 para 'NÂO SOU ESTUDANTE'"))
+    estudante = int(input("Digite 1 para 'SIM,SOU ESTUDANTE' ou 0 para 'NÂO SOU ESTUDANTE': "))
     if idade < 18 and estudante == 1:
         print("Você é estudante e pode votar.")
     elif idade < 18 and estudante == 0:
@@ -18,141 +18,114 @@ def exe1():
 #Use operadores lógicos para validar as condições.
 def exe2():
     print("\n--- Acesso ao Evento ---")
-    ingresso = int(input("Digite 1 para 'TENHO INGRESSO' ou 0 para 'NÃO TENHO INGRESSO'"))
-    amigoOrganizador = int(input("Digite 1 para 'SOU AMIGO DO ORGANIZADOR' ou 0 para 'NÃO SOU AMIGO DESSE BOSTA!'"))
+    ingresso = int(input("Digite 1 para 'TENHO INGRESSO' ou 0 para 'NÃO TENHO INGRESSO': "))
+    amigoOrganizador = int(input("Digite 1 para 'SOU AMIGO DO ORGANIZADOR' ou 0 para 'NÃO SOU AMIGO DESSE BOSTA!': "))
     if ingresso == 1:
-        print("Bem vindo ao evento, vocÊ tem ingresso!")
-    elif :
+        print("Bem vindo ao evento, Você tem ingresso!")
+    elif amigoOrganizador == 1:
+        print("Bem vindo ao evento. Você é amigo do CARA!")
+    else:
+        print("Você não pode entrar.")
 
-#Crie um programa que imprima uma tabela simples, com duas colunas: 
-# "Nome" e "Idade". Preencha a tabela com os dados de 3 pessoas.
-
+#Peça ao usuário para inserir sua nota em uma prova. 
+#Se a nota for maior ou igual a 7 e o aluno não 
+#tiver faltado mais de 25% das aulas, exiba uma mensagem
+#de "Aprovado". Caso contrário, exiba "Reprovado".
 def exe3():
-    print("\n--- Tabela de Dados ---")
-    nome1 = input("Digite o primeiro nome: ") 
-    idade1 = input("Digite a primeira idade: ")
-    nome2 = input("Digite o segundo nome: ")
-    idade2 = input("Digite a segunda idade: ")
-    nome3 = input("Digite o terceiro nome: ")
-    idade3 = input("Digite a terceira idade: ")
+    print("\n--- Classificação de Notas ---")
+    NotaProva = int(input("Digite a nota da sua prova: "))
+    frequencia = int(input("Digite sua frequência em sala de aula: "))
+    if NotaProva >=  7 and frequencia >= 100 * 0.25: #Testa se o valor da frequencia é maior ou igual a 25% de 100%.
+        print("Aprovado.")
+    else:
+        print("Reprovado.")
 
-    print(f"{nome1} {idade1}")  # Adicione 'f' antes da string para formatar
-    print(f"{nome2} {idade2}")
-    print(f"{nome3} {idade3}")
-
-#Crie um programa que peça ao usuário para digitar seu nome e, 
-#em seguida, imprima uma mensagem de boas-vindas personalizada, 
-# utilizando o nome digitado
-
+#Crie um sistema de login simples. 
+#Pergunte ao usuário se ele tem um nome de usuário 
+#e uma senha. O acesso deve ser concedido 
+#se o nome de usuário for "admin" e a senha for "1234". 
+#Utilize operadores lógicos para verificar ambas as condições.
 def exe4():
-    print("\n--- Menssagem de Boas Vindas ---")
-    nome = input("Digite seu nome: ")
+    print("\n--- Sistema de Login ---")
+    user = str(input("Digite seu nome de usuário: ").lower())
+    senha = int(input("Digite a senha: "))
+    if user == 'admin'and senha == 123:
+        print("Usuário Logado.")
+    else:
+        print("Login e/ou senha incorretos.")
 
-    print("Olá" " " f"{nome}" " " "sinta-se em casa.")
-
-#Crie um programa que peça ao usuário que digite dois números decimais. 
-# Calcule e exiba a soma dos dois números.
-
+#Pergunte ao usuário o valor da compra e se ele é membro
+#de um programa de fidelidade. O frete é grátis 
+#se o valor da compra for maior que 100 ou 
+#se o usuário for membro. 
+#Mostre uma mensagem indicando 
+#se o frete é gratuito ou não.
 def exe5():
-    print("\n--- Cálculo de Soma ---")
-    numero1 = int(input("Digite um número: "))
-    numero2 = int(input("Digite outro número: "))
-    
-    print(f"{numero1} + {numero2} = {numero1 + numero2}")
- 
+    print("\n--- Cálculo de Frete ---")
+    valor = int(input("Qual o valor da compra: "))
+    fidelidade = str(input("Você é membro do clube de vantagens?: ").lower())
 
-#Crie um programa que peça ao usuário que digite dois números decimais. 
-# Calcule e exiba a multiplicação dos dois números
+    if valor > 100 and fidelidade == 'SIM':
+        print("Frete grátis!")
+    else:
+        print("Aguarde enquanto calculamos seu frete...")
 
+#Peça ao usuário para inserir um número. 
+#Exiba uma mensagem indicando se o número é par e maior que 10
+#ou ímpar e menor que 5. Use operadores lógicos para combinar as condições.
 def exe6():
-    print("\n--- Cálculo de Multiplicação ---")
-    numero1 = int(input("Digite um número: "))
-    numero2 = int(input("Digite outro número: "))
-    
-    print(f"{numero1} x {numero2} = {numero1 * numero2}")
+    print("\n--- Verificação de Par ou Ímpar ---")
+    num = int(input("Digite um número: "))
 
-#Crie um programa que calcule a área de um retângulo. 
-# Peça ao usuário para digitar a base e a altura, e imprima o resultado.
+    #Verifica se o número é pár e maior que 10 ou se é impar e menor que 5
+    if (num % 2 == 0 and num > 10) or (num % 2 != 0 and num < 5):
+        print("O numero atende as condições necessárias.")
+    else:
+        print("O número não é compatível.")
 
+#Pergunte ao usuário se ele é um novo cliente 
+#e se ele possui um código de desconto. 
+#O cliente deve receber um desconto se ele for novo ou se tiver um código. 
+#Exiba uma mensagem informando se ele pode receber o desconto
 def exe7():
-    print("\n--- Área do retângulo ---")
-    base = float(input("Digite a base do retângulo: "))
-    altura = float(input("Digite a altura do retângulo: "))
+    print("\n--- Promoção em loja ---")
+    NovoCliente = input("Você é um novo cliente? (sim/não): ").lower()
+    CodigoDesconto = input("Digite seu código de desconto (4 caracteres): ").strip().upper()
 
-    print(f"{base} x {altura} = {base * altura}")
+    # Valida se o código tem exatamente 4 caracteres usando um 'for'
+    valido = True
+    for char in CodigoDesconto:
+        if not char.isalnum():
+            valido = False
+            break  # Sai do loop ao encontrar um caractere inválido
 
-#Crie um programa que peça ao usuário que digite 4 notas de uma disciplina.
+    if NovoCliente == 'sim' or (len(CodigoDesconto) == 4 and valido):
+        if CodigoDesconto:  # Mostra o código apenas se foi digitado
+            print(f"Desconto concedido. Código utilizado: {CodigoDesconto}")
+        else:
+            print("Desconto concedido.")
+    else:
+        print("Inabilitado para receber o desconto.")
 
-def exe8():
-    print("\n--- Notas de disciplina ---")
-    nota1 = float(input("Digite a primeira nota: "))
-    nota2 = float(input("Digite a segunda nota: "))
-    nota3 = float(input("Digite a terceira nota: "))
-    nota4 = float(input("Digite a quarta nota: "))
+    #Codigo de desconto tem que ter 4 caracteres sendo numeros ou letras e irá aparecer em maiúsculo
+    #print("\n--- Promoção em loja ---")
+    #NovoCliente = input("Você é um novo cliente? (sim/não): ").lower()
+    #CodigoDesconto = input("Digite seu código de desconto (4 caracteres): ").strip().upper()#Tira os espaços e mostra o resultado em caixa alta
 
-    print(f"{nota1} {nota2}")
-    print(f"{nota3} {nota4}")
+    # Verifica se o código tem exatamente 4 caracteres
+    #if NovoCliente == 'sim' or (len(CodigoDesconto) == 4 and CodigoDesconto.isalnum()):#Remove qualquer caracter especial
+        #print(f"Desconto concedido. Código utilizado: {CodigoDesconto}")
+    #else:
+        #print("Inabilitado para receber o desconto.") 
 
-#Calcule e exiba a média das notas.
 
-def exe9():
-    print("\n--- Média das Notas ---")
-    nota1 = int(input("Digite a primeira nota: "))
-    nota2 = int(input("Digite a segunda nota: "))
-    nota3 = int(input("Digite a terceira nota: "))
-    nota4 = int(input("Digite a quarta nota: "))
 
-    print(f"{nota1 + nota2 + nota3 + nota4/4} ")
 
-#Crie um programa que peça ao usuário que digite 
-#uma frase e imprima o número de caracteres dessa string.
 
-def exe10():
-    print("\n--- Tamanaho da String ---")
-    minha_string = "Boa noite DEVs. Tudo numa boa!?"
-    numero_de_caracteres = len(minha_string)
-    print(f"Número de caracteres em '{minha_string}': {numero_de_caracteres}")
 
-#Crie um programa que peça ao usuário para digitar uma frase contendo uma palavra 
-#maiúscula, converta essa palavra para minúsculas e exiba o resultado.
+    
 
-def exe11():
-    print("\n--- Conversão para minúsculo ---")
-    texto = str(input("Digite seu texto: "))
-    texto_minusculo = texto.lower()
-    print(f" '{texto}' em minúsculo: {texto_minusculo}")
 
-#Crie um programa que peça ao usuário para digitar uma frase contendo uma palavra 
-#minúscula, converta essa palavra para maiúscula e exiba o resultado.
-
-def exe12():
-    print("--- Conversão para maiúsculo ---")
-    texto = str(input("Digite seu texto: "))
-    texto_maiusculo = textp.upper()
-    print(f" '{texto}' em maiúsculo: {texto_maiusculo}")
-
-#Crie um programa que remova todas as ocorrências de um caractere específico da string 
-#digitada pelo usuário. Solicite ao usuário para digitar o caractere a ser removido.
-
-def exe13():
-    print("-- Remoção de caracter ---")
-    #texto = input("Digite uma string: ")
-    texto =  input("Digite seu texto: ")
-    #caractere_remover = "a" 
-    caracter_removido = "a"
-    #texto_modificado = texto.replace(caractere_remover, "")
-    texto_novo = texto.replace(caracter_removido, "")
-    #print(f"String original: {texto}")
-    #print(f"Caractere a ser removido: '{caractere_remover}'")
-    #print(f"String modificada: {texto_modificado}")
-    print(f"{texto_novo}")
-
-    #---- Coreção do Deepseak ----
-    #print("\n--- Remoção do caractere 'a' ---")  # Avisa qual caractere será removido
-    #texto = input("Digite uma frase: ")
-    #caractere_pre_definido = "a"  # Caractere pré-definido (pode ser alterado)
-    #texto_modificado = texto.replace(caractere_pre_definido, "")
-    #print(f"Resultado: {texto_modificado}")  # Mostra apenas a string modificada
     
 
 
