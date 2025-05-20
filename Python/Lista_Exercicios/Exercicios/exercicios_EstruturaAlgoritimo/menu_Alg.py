@@ -1,6 +1,6 @@
-from ListaOp import exe1, exe2, exe3, exe4, exe5, exe6, exe7, exe8, exe9, exe10
+from ListaAlgoritimo import exe1, exe2, exe3, exe4, exe5, exe6, exe7, exe8, exe9, exe10
 
-def menu_Op():    
+def menu_Alg():    
     while True:
         print("\n--- Menu de Seleção ---")
         print("Escolha o que você quer ver:")
@@ -46,4 +46,4 @@ def menu_Op():
             print("Opção onválida. Por favor, digite um número válido do menu.")
 
 if __name__ == "__main__":
-    menu_Op()
+    menu_Alg()

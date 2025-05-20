@@ -1,0 +1,1 @@
+from exercicios_EstruturaAlgoritimo.menu_Alg import menu_Alg

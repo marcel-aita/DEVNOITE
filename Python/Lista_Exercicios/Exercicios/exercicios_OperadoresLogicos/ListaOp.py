@@ -118,6 +118,44 @@ def exe7():
     #else:
         #print("Inabilitado para receber o desconto.") 
 
+#Pergunte ao usuário em qual mês ele nasceu e em qual região do Brasil ele mora. 
+#Determine se ele pode ser considerado "veranista" se o mês for entre dezembro 
+#e fevereiro e se morar no sul do Brasil. Utilize operadores lógicos para essa verificação
+def exe8():
+    print("\n--- Estação do Ano ---")
+    mes = int(input("Digite o número do mês em que você nasceu (1-12): "))
+    regiao = str(input("Digite sua região (Norte/Sul):")).upper()
+    if (mes >=1 and mes <= 12) and (regiao == 'SUL'):
+        print("Você é veranista.")
+    else:
+        print("Você não é veranista.")
+
+#Crie um programa que pergunte se o usuário possui um crachá de identificação 
+#e se ele já trabalha na empresa há mais de um ano. 
+#O acesso deve ser concedido se o usuário tiver o crachá 
+#ou se tiver mais de um ano de empresa.
+def exe9():
+    print("\n--- Autorização de Entrada ---")
+    cracha = int(input("Digite 1 para 'TENHO CRACHA' ou 0 para 'NÃO TENHO CRACHA': "))
+    tempo = int(input("Digite 1 para 'TENHO MAIS DE UM ANO DE EMPRESA' ou 0 para 'NÃO TENHO MAIS DE UM ANO DE EMPRESA': "))
+    if cracha == 1 or tempo == 1:
+        print("Acesso autorizado.")
+    else:
+        print("Acesso negado.")
+
+#Crie um jogo simples onde o usuário deve adivinhar um número. 
+#Pergunte ao usuário se o palpite está entre 1 e 10 e se ele já tentou adivinhar antes. 
+#Exiba uma mensagem informando se ele pode continuar jogando, usando operadores lógicos.
+def exe10():
+    print("\n--- Jogo de Adivinhação ---")
+    palpite = int(input("Digite um número entre 1 e 10: "))
+    tentativas = int(input("Digite 1 para 'JÁ TENTEI ADIVINHAR' ou 0 para 'NÃO TENTEI ADIVINHAR': "))
+    if (palpite >= 1 and palpite <= 10) and tentativas == 0:
+        print("Você pode continuar jogando.")
+    else:
+        print("Você não pode continuar jogando.")
+
+
 
 
 
