@@ -1,4 +1,4 @@
-from ListaAlgoritimo import exe1, exe2, exe3, exe4, exe5, exe6, exe7, exe8, exe9, exe10
+from ListaAlgoritimo import exe1, exe2, exe3, exe4, exe5, exe6
 
 def menu_Alg():    
     while True:
@@ -9,12 +9,6 @@ def menu_Alg():
         print("3 - exe3")
         print("4 - exe4")
         print("5 - exe5")
-        print("6 - exe6")
-        print("7 - exe7")
-        print("8 - exe8")
-        print("9 - exe9")
-        print("10 - exe10")
-
         print("0 - sair")
 
         opcao = input("Digite sua opçâo: ")
@@ -31,14 +25,6 @@ def menu_Alg():
             exe5()
         elif opcao == '6':
             exe6()
-        elif opcao == '7':
-            exe7()
-        elif opcao == '8':
-            exe8()
-        elif opcao == '9':
-            exe9()
-        elif opcao == '10':
-            exe10()    
         elif opcao == '0':
             print("Saindo do programa.")
             break
