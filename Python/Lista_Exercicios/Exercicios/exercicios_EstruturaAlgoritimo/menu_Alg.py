@@ -9,6 +9,8 @@ def menu_Alg():
         print("3 - exe3")
         print("4 - exe4")
         print("5 - exe5")
+        print("6 - exe6")        
+        
         print("0 - sair")
 
         opcao = input("Digite sua opçâo: ")
