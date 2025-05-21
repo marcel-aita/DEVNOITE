@@ -137,6 +137,7 @@ def exe2():
 
 # 3. MÓDULOS E PACOTES
 
+
 ## 3.1 Importando e utilizando módulos
 # Crie operacoes.py com soma(a, b) e diferenca(a, b).
 # Crie main.py que importa e usa essas funções.
@@ -153,6 +154,7 @@ def exe2():
 ## 3.4 Utilizando __init__.py em pacotes
 # Crie pacote geometria com area.py e perimetro.py.
 # Em __init__.py, importe funções de área e perímetro e use no script principal.
+
 # 4. EXTRAS
 
 ## 4.1 Desafio: Mini sistema de cadastro de clientes
