@@ -21,5 +21,10 @@ def exec4():
         input("Digite a senha: ")
     )
     conta.apresentacao()
+    operacao = operacoes(conta.titular)
+    operacao.depositar(0.0)  # Inicializa com 0.0 para evitar erro de saldo inicial
 if __name__ == "__main__":
     exec4()
+from operacoes import operacoes
+from global_imports import *
+from operacoes import exec4
