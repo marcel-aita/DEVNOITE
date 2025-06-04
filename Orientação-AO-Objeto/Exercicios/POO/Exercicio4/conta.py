@@ -3,28 +3,32 @@
 # Implemente métodos para realizar operações financeiras.
 
 class Conta:
-    def __init__(self, titular, conta, agencia, senha):
+    def __init__(self, titular, saldo:float):
         self.titular = titular
-        self.conta = conta
-        self.agencia = agencia
-        self.senha = senha       
+        self.saldo = saldo 
 
-    def apresentacao(self):
-        print(f"Titular: {self.titular}, Conta: {self.conta}, Agência: {self.agencia}, Senha: {self.senha}")
+    def depositar (self, valor:float):
+        if valor > 0:
+            self.saldo += valor
+            print(f"Depósito de R${valor:.2f} realizado com sucesso.")
+        else:
+            print("Valor de depósito inválido.")
 
+    def sacar(self, valor:float):
+        if valor > 0 and valor <= self.saldo:
+            self.saldo -= valor
+            print(f"Saque de R${valor:.2f} realizado com sucesso.")
+        else:
+            print("Valor de saque inválido ou saldo insuficiente.")
+    
+    def consultar_saldo(self):
+        print(f"Saldo atual: R${self.saldo:.2f}")
 
-def exec4():
-    conta = Conta(
-        input("Digite o nome do titular: "),
-        input("Digite o número da conta: "),
-        input("Digite o número da agência: "),
-        input("Digite a senha: ")
-    )
-    conta.apresentacao()
-    operacao = operacoes(conta.titular)
-    operacao.depositar(0.0)  # Inicializa com 0.0 para evitar erro de saldo inicial
-if __name__ == "__main__":
-    exec4()
-from operacoes import operacoes
-from global_imports import *
-from operacoes import exec4
+    def exec4(self):
+        print(f"Titular: {self.titular}")
+        print(f"Saldo: R${self.saldo:.2f}")
+        self.consultar_saldo()
+        self.depositar(100)
+        self.sacar(50)
+        self.consultar_saldo()
+        self.sacar(self.saldo)
