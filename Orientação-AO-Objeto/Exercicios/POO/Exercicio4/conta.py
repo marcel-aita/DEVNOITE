@@ -5,8 +5,7 @@
 class Conta:
     def __init__(self, titular, saldo:float):
         self.titular = titular
-        self.saldo = saldo
-        conta = Conta(titular, saldo) 
+        self.saldo = saldo         
 
     def depositar (self, valor:float):
         if valor > 0:
