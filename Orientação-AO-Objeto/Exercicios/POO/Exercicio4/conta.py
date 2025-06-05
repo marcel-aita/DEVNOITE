@@ -5,7 +5,8 @@
 class Conta:
     def __init__(self, titular, saldo:float):
         self.titular = titular
-        self.saldo = saldo 
+        self.saldo = saldo
+        conta = Conta(titular, saldo) 
 
     def depositar (self, valor:float):
         if valor > 0:
@@ -24,11 +25,4 @@ class Conta:
     def consultar_saldo(self):
         print(f"Saldo atual: R${self.saldo:.2f}")
 
-    def exec4(self):
-        print(f"Titular: {self.titular}")
-        print(f"Saldo: R${self.saldo:.2f}")
-        self.consultar_saldo()
-        self.depositar(100)
-        self.sacar(50)
-        self.consultar_saldo()
-        self.sacar(self.saldo)
+   
