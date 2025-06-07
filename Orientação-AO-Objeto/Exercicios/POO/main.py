@@ -7,6 +7,7 @@ def menu_pricipal():
         print("2 - Exercício 2")
         print("3 - Exercicio 3")
         print("4 - Exercicio 4")
+        print("5 - Exercicio 5")
 
         print("0 - Sair")
 
@@ -23,6 +24,9 @@ def menu_pricipal():
 
         elif opcao == "4":
             exec4()
+        
+        elif opcao == "5":
+            exec5()
 
         elif opcao == "0":
             print("Saindo do programa...")
