@@ -17,4 +17,4 @@ class Estudante:
     def calcular_media(self):
         if self.notas:
             return sum(self.notas) / len(self.notas)
-        return
+        return 0.0
