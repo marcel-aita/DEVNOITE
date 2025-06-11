@@ -1,0 +1,7 @@
+from introducao.menu_introducao import Menu_introducao
+from introducao.atributo import atributo_executar
+from introducao.classe import classe_executar
+from introducao.metodo import metodo_executar
+from introducao.completo import completo_executar
+from Encapsulamento.menu_encapsulamento import menu_encapsulamento_introducao
+
