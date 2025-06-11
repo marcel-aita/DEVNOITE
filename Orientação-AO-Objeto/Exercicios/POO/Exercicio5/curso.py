@@ -1,16 +1,13 @@
-from estudante import Estudante
+
 
 class Curso:
     def __init__(self, nome):
         self.nome = nome
         self.estudantes = []
 
-estudante = Estudante
+    def cadastrar_estudante(self, estudante):
+        self.estudantes.append(estudante)
 
-def exec5(self, estudante):
-    print("\n--- Bem Vindo ao Sistema de Estudantes ---")
-    self.estudantes.append(estudante)
-
-def listar_estudante(self):
-    for estudante in self.estudantes:
-        print(f"Nome: {estudante.nome}, Idade: {estudante.idade}, Média: {estudante.calcular_media():.2f}")
+    def listar_estudantes(self):
+        for est in self.estudantes:
+            print(f"Nome: {est.nome}, Idade: {est.idade}, Média: {est.calcular_media():.2f}")

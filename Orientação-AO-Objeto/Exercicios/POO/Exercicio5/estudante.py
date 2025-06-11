@@ -6,7 +6,7 @@
 # Inclua métodos para cálculo de média e para cadastrar estudantes no curso.
 
 class Estudante:
-    def __init__(self, nome, idade)
+    def __init__(self, nome, idade):
         self.nome = nome
         self.idade = idade
         self.notas = []
@@ -17,4 +17,4 @@ class Estudante:
     def calcular_media(self):
         if self.notas:
             return sum(self.notas) / len(self.notas)
-        return 0.0
+        return
