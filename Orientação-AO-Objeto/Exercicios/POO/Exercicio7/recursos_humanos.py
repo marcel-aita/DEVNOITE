@@ -14,12 +14,12 @@ class RecursosHumanos:
         for funcionario in self.funcionarios:
             print(funcionario)
 
-    def calcular_media_salario(self):
-        if not self.funcionarios:
-            return 0.0
-        total_salario = sum(funcionario.salario for funcionario in self.funcionarios)
-        return total_salario / len(self.funcionarios)
-    
+    def definir_salario_funcionario(self, nome, salario):
+        for funcionario in self.funcionarios:
+            if funcionario.nome == nome:
+                funcionario.definir_salario(salario)
+                print(f"Salário de {nome} definido como {salario:.2f}")
+
     def aumentar_salario_funcionario(self, nome, percentual):
         for funcionario in self.funcionarios:
             if funcionario.nome == nome:

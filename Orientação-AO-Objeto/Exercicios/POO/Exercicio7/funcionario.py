@@ -4,10 +4,10 @@
 # salariais.
 
 class Funcionario:
-    def __init__(self, nome, idade):
+    def __init__(self, nome, idade, salario=0.0):        
         self.nome = nome
         self.idade = idade
-        self.salario = 0.0
+        self.salario = salario
 
         def definir_salario(self, salario):
             self.salario.append(salario)
