@@ -4,13 +4,13 @@
 # salariais.
 
 class Funcionario:
-    def __init__(self, nome, idade, salario=0.0):        
+    def __init__(self, nome, idade, salario:float):        
         self.nome = nome
         self.idade = idade
         self.salario = salario
 
-        def definir_salario(self, salario):
-            self.salario.append(salario)
+    def definir_salario(self, salario):
+        self.salario.append(salario)
 
     def aumentar_salario(self, percentual):
         if percentual > 0:
