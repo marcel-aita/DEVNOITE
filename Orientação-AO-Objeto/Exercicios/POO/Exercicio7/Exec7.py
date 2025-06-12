@@ -18,7 +18,7 @@ while True:
         nome_funcionario = input("Digite o nome do funcionário: ")
         idade_funcionario = int(input("Digite a idade do funcionário: "))
         funcionario = Funcionario(nome_funcionario, idade_funcionario)
-        salario = (input("Digite o salário do funcionário: "))
+        salario =(input("Digite o salário do funcionário: "))
         funcionario.definir_salario(salario)
         
         recursos_humanos = RecursosHumanos()
