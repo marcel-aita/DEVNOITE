@@ -3,9 +3,6 @@ from .recursos_humanos import RecursosHumanos
 
 def exec7():
     recursos_humanos = RecursosHumanos()
-
-    # Menu de Recursos Humanos    
-
 while True:
     print("\n--- Menu de Recursos Humanos ---")
     print("1. Cadastrar Funcionários")
