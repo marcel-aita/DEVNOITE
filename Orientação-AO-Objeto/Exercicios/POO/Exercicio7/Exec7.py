@@ -25,25 +25,18 @@ def exec7():
     # Enquanto o usuário responder 's', continua perguntando pelo nome do funcionário e o novo salário
     while resposta == 's':
         nome_ajuste = input("Digite o nome do funcionário que terá o salário ajustado: ")# Permite ao usuário informar o nome do funcionário cujo salário será ajustado
-        novo_salario = float(input(f"Digite o novo salário de {nome_ajuste}: "))# Permite ao usuário informar o novo salário do funcionário
-        
-        # Procura o funcionário pelo nome e ajusta o salário
-        encontrado = False
-        for func in departamento.funcionarios:
-            if func.nome.lower() == nome_ajuste.lower():# Verifica se o nome do funcionário corresponde ao informado pelo usuário em minúsculas
-                func.ajustar_salario(novo_salario)# Ajusta o salário do funcionário com o novo valor informado
-                print(f"Salário de {func.nome} ajustado com sucesso.")# Informa que o salário do funcionário foi ajustado com sucesso
-                encontrado = True# Marca que o funcionário foi encontrado
-                break# Sai do loop após encontrar o funcionário
-
-        # Se o funcionário não for encontrado, informa ao usuário
-        if not encontrado:
+        # Verifica se o o funcionario esta listado
+        if not any(func.nome.lower() == nome_ajuste.lower() for func in departamento.funcionarios):
             print("Funcionário não encontrado.")# Informa que o funcionário não foi encontrado na lista de funcionários
-        
-        # Pergunta se o usuário deseja ajustar o salário de outro funcionário
-        resposta = input("\nDeseja ajustar o salário de outro funcionário? (s/n): ").lower()# em minúsculas
-
-    # Exibe novamente os funcionários do departamento após os ajustes
-    print(f"\nFuncionários do departamento {nome_departamento} após ajustes:")
-    for func in departamento.funcionarios:# Itera sobre a lista de funcionários do departamento
-        print(f"Nome: {func.nome}, Salário: R${func.salario:.2f}")# Exibe o nome e salário de cada funcionário após os ajustes
+            resposta = input("\nDeseja ajustar o salário de outro funcionário? (s/n): ").lower()# Pergunta se o usuário deseja tentar novamente
+            if resposta != 's':# Se a resposta não for 's'
+                print("Nenhum ajuste realizado.")# Informa que nenhum ajuste foi realizado e sai do loop
+                print(f"\nFuncionários do departamento {nome_departamento}, Salário: R${func.salario: .2f}")# Exibe novamente os funcionários do departamento
+            else:
+                novo_salario = float(input(f"Digite o novo salário para {nome_ajuste}: "))
+                # Ajusta o salário do funcionário encontrado
+                for func in departamento.funcionarios:
+                    if func.nome.lower() == nome_ajuste.lower():
+                        func.ajustar_salario(novo_salario)
+                        print(f"Salário de {func.nome} ajustado para R${func.salario:.2f}")
+                        break# Sai do loop se o funcionário foi encontrado e o salário ajustado  
