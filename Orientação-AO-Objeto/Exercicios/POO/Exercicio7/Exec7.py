@@ -5,7 +5,7 @@ def exec7():
     recursos_humanos = RecursosHumanos()
     while True:
         print("\n--- Menu de Recursos Humanos ---")
-        print("1. Cadastrar Funcionários")
+        print("1. Cadastrar Funcionário")
         print("2. Adicionar Salário")
         print("3. Buscar Funcionário")
         print("4. Aumentar Salário")
@@ -17,15 +17,13 @@ def exec7():
         if opcao == "1":
             nome = input("Digite o nome do funcionário: ")
             idade = int(input("Digite a idade do funcionário: "))
-            salario = float(input("Digite o salário do funcionário: "))
-            funcionario = Funcionario(nome, idade, salario)
-            recursos_humanos.adicionar_funcionario(funcionario)
-            print(f"Funcionário {nome} cadastrado com sucesso.")
+            print(f"Funcionário {nome}, {idade} cadastrado com sucesso.")
 
         elif opcao == "2":
             nome = input("Digite o nome do funcionário: ")
             salario = float(input("Digite o novo salário: "))
             recursos_humanos.adicionar_salario(nome, salario)
+            print(f"Salário de {nome} cadastrado para R${salario:.2f}.")
         
         elif opcao == "3":
             nome = input("Digite o nome do funcionário: ")
