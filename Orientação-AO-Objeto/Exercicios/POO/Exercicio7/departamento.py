@@ -3,11 +3,12 @@
 # Adicione atributos e métodos que permitam organizar os funcionários e modificar dados 
 # salariais.
 
-class Funcionario:
-    def __init__(self, nome, salario):        
+class Departamento:
+    def __init__(self, nome):
         self.nome = nome
-        self.salario = salario
+        self.funcionarios = []
 
-    def ajustar_salario(self, novo_salario):
-        self.salario = novo_salario
-    
+    def adicionar_funcionario(self, funcionario):
+        self.funcionarios.append(funcionario)
+        
+
