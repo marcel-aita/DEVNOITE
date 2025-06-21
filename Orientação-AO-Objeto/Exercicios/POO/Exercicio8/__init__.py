@@ -4,3 +4,5 @@
 
 from .produtos import Produto
 from .clientes import Cliente
+#from .estoque import Estoque
+from .Exec8 import exec8

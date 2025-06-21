@@ -9,15 +9,34 @@
 # └── clientes.py
 # Exercicio8/produtos.py
 class Produto:
-    def __init__(self, nome, preco, quantidade):
+    def __init__(self, nome, preco:float, quantidade:int = 0):
+        self.quantidade = quantidade
         self.nome = nome
         self.preco = preco
-        self.quantidade = quantidade
+        self.produtos = []    
+    
+    def exibir_produtos(self):
+        for produto in self.produtos:
+            print(f"Produto: {produto.nome}, Preço: R$: {produto.preco:.2f}, Quantidade: {produto.quantidade}")
 
-    def atualizar_estoque(self, quantidade):
-        self.quantidade += quantidade
+    def adicionar_produto(self, produto):
+        self.produtos.append(produto)
 
-    def __str__(self):
-        return f"{self.nome} - R${self.preco:.2f} - Estoque: {self.quantidade}"
+    def atualizar_estoque(self, nome, quantidade, preco):
+        for produto in self.produtos:
+            if produto.nome == nome:
+                produto.quantidade += quantidade
+                produto.preco = preco
+                print(f"Estoque atualizado: {produto.nome}, Quantidade: {produto.quantidade}, Preço: R$: {produto.preco:.2f}")
+                return
+        print("Produto não encontrado no estoque.")
+
+    def simular_compra(self, nome, quantidade):
+        for produto in self.produtos:
+            
+
     
     
+        
+    
+
