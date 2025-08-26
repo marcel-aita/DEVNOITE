@@ -29,7 +29,6 @@ public class Main{
 
         //Métodos para classe fornecedor
 
-
         
         //Herança AlimentoPerecivel
         ap.setCategoria("Padaria");
