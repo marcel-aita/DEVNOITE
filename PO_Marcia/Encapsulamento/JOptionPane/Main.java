@@ -10,6 +10,10 @@ public class Main {
         int nota2 = Integer.parseInt(JOptionPane.showInputDialog(null,"Digite a nota 2:", JOptionPane.INFORMATION_MESSAGE));
         int nota3 = Integer.parseInt(JOptionPane.showInputDialog(null,"Digite a nota 3:", JOptionPane.INFORMATION_MESSAGE));        
         int media = (nota1 + nota2 + nota3) / 3;
+
+        //baskara
+
+
        
         JOptionPane.showMessageDialog(null, "Aluno, " + nome + "\nMédia" + media , "Saudação", JOptionPane.INFORMATION_MESSAGE);
         
