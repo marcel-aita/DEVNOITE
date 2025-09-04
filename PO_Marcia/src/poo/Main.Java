@@ -1,138 +1,67 @@
-import javax.swing.JOptionPane;
-import java.util.ArrayList;
-import poo.gestao.Aluno;
-import poo.gestao.Turma;
-import poo.gestao.Notas;
-import poo.calculos.Calculo;
-import poo.calculos.Bhaskara;
-import poo.calculos.GeratrizTriangulo;
-import poo.calculos.AreaRetangulo;
-import poo.calculos.RaioCilindro;
+
 
 /**
  * Classe principal do sistema.
- * Gerencia o menu de interações com o usuário e
- * invoca as funcionalidades das outras classes usando JOptionPane.
+ * Gerencia o fluxo de criação de objetos, preenchimento de dados
+ * e execução da prova de recuperação de forma direta.
  */
-public class Main {
-
-    private static ArrayList<Aluno> alunosCadastrados = new ArrayList<>();
-    private static ArrayList<Turma> turmasCadastradas = new ArrayList<>();
+public class Principal {
 
     public static void main(String[] args) {
-        String[] opcoes = {"Cadastrar Aluno", "Cadastrar Turma", "Cadastrar Notas", "Prova de Recuperação", "Sair"};
-        int opcao;
+        // --- 1. CRIAÇÃO DOS OBJETOS ---
+        // Criação de objetos para as classes de gestão
+        Aluno a = new Aluno("João da Silva", "2023001");
+        Turma t = new Turma("Turma 3A - Manhã");
+        Notas n = new Notas(7.5, 8.0, 9.0);
 
-        do {
-            opcao = JOptionPane.showOptionDialog(
-                null,
-                "Selecione uma opção:",
-                "Menu Principal",
-                JOptionPane.DEFAULT_OPTION,
-                JOptionPane.INFORMATION_MESSAGE,
-                null,
-                opcoes,
-                opcoes[0]
-            );
+        // Criação de objetos para as classes de cálculo (questões da prova)
+        Bhaskara qb = new Bhaskara();
+        GeratrizTriangulo qt = new GeratrizTriangulo();
+        AreaRetangulo qr = new AreaRetangulo();
+        RaioCilindro qc = new RaioCilindro();
 
-            switch (opcao) {
-                case 0: // Cadastrar Aluno
-                    cadastrarAluno();
-                    break;
-                case 1: // Cadastrar Turma
-                    cadastrarTurma();
-                    break;
-                case 2: // Cadastrar Notas
-                    cadastrarNotas();
-                    break;
-                case 3: // Prova de Recuperação
-                    menuProvaRecuperacao();
-                    break;
-                case 4: // Sair
-                    JOptionPane.showMessageDialog(null, "Saindo do sistema. Até mais!");
-                    break;
-                default:
-                    // Ação para fechar a janela, que também sai do loop
-            }
+        // --- 2. PREENCHIMENTO DE DADOS E RELACIONAMENTOS ---
+        // Preenchendo dados do aluno
+        a.setTurma(t);
+        a.adicionarNotas(n);
 
-        } while (opcao != 4 && opcao != JOptionPane.CLOSED_OPTION);
-    }
+        // Resetando os acertos do aluno para iniciar a prova
+        a.resetAcertos();
 
-    public static void cadastrarAluno() {
-        String nome = JOptionPane.showInputDialog(null, "Digite o nome do aluno:", "Cadastro de Aluno", JOptionPane.QUESTION_MESSAGE);
-        String matricula = JOptionPane.showInputDialog(null, "Digite a matrícula do aluno:", "Cadastro de Aluno", JOptionPane.QUESTION_MESSAGE);
+        // --- 3. EXECUÇÃO DA PROVA (Cálculos) ---
+        // Aqui simulamos a execução da prova, onde as respostas são
+        // comparadas com valores predefinidos em cada classe de cálculo.
 
-        if (nome != null && matricula != null) {
-            Aluno novoAluno = new Aluno(nome, matricula);
-            alunosCadastrados.add(novoAluno);
-            JOptionPane.showMessageDialog(null, "Aluno " + nome + " cadastrado com sucesso!");
-        }
-    }
-
-    public static void cadastrarTurma() {
-        String nomeTurma = JOptionPane.showInputDialog(null, "Digite o nome da turma:", "Cadastro de Turma", JOptionPane.QUESTION_MESSAGE);
-
-        if (nomeTurma != null) {
-            Turma novaTurma = new Turma(nomeTurma);
-            turmasCadastradas.add(novaTurma);
-            JOptionPane.showMessageDialog(null, "Turma " + nomeTurma + " cadastrada com sucesso!");
-        }
-    }
-
-    public static void cadastrarNotas() {
-        if (alunosCadastrados.isEmpty()) {
-            JOptionPane.showMessageDialog(null, "Nenhum aluno cadastrado para atribuir notas.");
-            return;
-        }
-        
-        String[] nomesAlunos = alunosCadastrados.stream().map(Aluno::getNome).toArray(String[]::new);
-        int escolhaAluno = JOptionPane.showOptionDialog(null, "Selecione o aluno para atribuir notas:", "Cadastro de Notas", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, nomesAlunos, nomesAlunos[0]);
-
-        if (escolhaAluno != JOptionPane.CLOSED_OPTION) {
-            try {
-                Aluno alunoSelecionado = alunosCadastrados.get(escolhaAluno);
-                double n1 = Double.parseDouble(JOptionPane.showInputDialog(null, "Digite a Nota 1:", "Notas de " + alunoSelecionado.getNome(), JOptionPane.QUESTION_MESSAGE));
-                double n2 = Double.parseDouble(JOptionPane.showInputDialog(null, "Digite a Nota 2:", "Notas de " + alunoSelecionado.getNome(), JOptionPane.QUESTION_MESSAGE));
-                double n3 = Double.parseDouble(JOptionPane.showInputDialog(null, "Digite a Nota 3:", "Notas de " + alunoSelecionado.getNome(), JOptionPane.QUESTION_MESSAGE));
-                
-                Notas novasNotas = new Notas(n1, n2, n3);
-                alunoSelecionado.adicionarNotas(novasNotas);
-                JOptionPane.showMessageDialog(null, "Notas cadastradas para " + alunoSelecionado.getNome() + ". Média: " + String.format("%.2f", novasNotas.calcularMedia()));
-            } catch (NumberFormatException e) {
-                JOptionPane.showMessageDialog(null, "Entrada de nota inválida. Por favor, digite um número.", "Erro", JOptionPane.ERROR_MESSAGE);
-            }
-        }
-    }
-
-    public static void menuProvaRecuperacao() {
-        if (alunosCadastrados.isEmpty()) {
-            JOptionPane.showMessageDialog(null, "Nenhum aluno cadastrado para realizar a prova de recuperação.");
-            return;
+        // Simulação de resposta para Bhaskara
+        boolean acertouBhaskara = qb.verificarResposta(2.0);
+        a.registrarResultado(qb.getNome(), acertouBhaskara);
+        if (acertouBhaskara) {
+            a.adicionarAcerto();
         }
 
-        String[] nomesAlunos = alunosCadastrados.stream().map(Aluno::getNome).toArray(String[]::new);
-        int escolhaAluno = JOptionPane.showOptionDialog(null, "Selecione o aluno que irá realizar a prova:", "Prova de Recuperação", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, nomesAlunos, nomesAlunos[0]);
-
-        if (escolhaAluno != JOptionPane.CLOSED_OPTION) {
-            Aluno alunoDaProva = alunosCadastrados.get(escolhaAluno);
-            alunoDaProva.resetAcertos();
-
-            ArrayList<Calculo> questoesDaProva = new ArrayList<>();
-            questoesDaProva.add(new Bhaskara());
-            questoesDaProva.add(new GeratrizTriangulo());
-            questoesDaProva.add(new AreaRetangulo());
-            questoesDaProva.add(new RaioCilindro());
-
-            for (Calculo questao : questoesDaProva) {
-                boolean acertou = questao.realizarCalculo();
-                alunoDaProva.registrarResultado(questao.getNome(), acertou);
-                if (acertou) {
-                    alunoDaProva.adicionarAcerto();
-                }
-            }
-
-            // Geração do relatório ao final da prova
-            JOptionPane.showMessageDialog(null, alunoDaProva.gerarRelatorio(), "Relatório Final", JOptionPane.INFORMATION_MESSAGE);
+        // Simulação de resposta para Geratriz de Triângulo
+        boolean acertouTriangulo = qt.verificarResposta(12.0);
+        a.registrarResultado(qt.getNome(), acertouTriangulo);
+        if (acertouTriangulo) {
+            a.adicionarAcerto();
         }
+
+        // Simulação de resposta para Área de Retângulo
+        boolean acertouRetangulo = qr.verificarResposta(40.0);
+        a.registrarResultado(qr.getNome(), acertouRetangulo);
+        if (acertouRetangulo) {
+            a.adicionarAcerto();
+        }
+
+        // Simulação de resposta para Raio de Cilindro
+        boolean acertouCilindro = qc.verificarResposta(2.0);
+        a.registrarResultado(qc.getNome(), acertouCilindro);
+        if (acertouCilindro) {
+            a.adicionarAcerto();
+        }
+
+        // --- 4. EXIBIÇÃO DO RELATÓRIO FINAL ---
+        // Geração e impressão do relatório no console
+        System.out.println(a.gerarRelatorio());
     }
 }
