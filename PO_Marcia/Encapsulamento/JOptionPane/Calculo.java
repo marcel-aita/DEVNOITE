@@ -12,7 +12,7 @@ public class Calculo {
 
     public static void main(String[] args) {
         
-        //Área do retangulo
+        //Área do retangulo: Caixa de diálogo para inserção dos valores
         
         //System.out.println(null);
         Calculo cArea = new Calculo();
@@ -22,19 +22,21 @@ public class Calculo {
 
 
 
-        //Báskara
+        //Bháskara: Caixa de diálogo para inserção dos variáveis
         Calculo cBhaskara = new Calculo();
         cBhaskara.a = Double.parseDouble(JOptionPane.showInputDialog(null, "Entre com o valor de 'a': ", JOptionPane.INFORMATION_MESSAGE));
         cBhaskara.b = Double.parseDouble(JOptionPane.showInputDialog(null, "Entre com o valor de 'b': ", JOptionPane.INFORMATION_MESSAGE));
         cBhaskara.c = Double.parseDouble(JOptionPane.showInputDialog(null, "Enter com o valor de 'c': ", JOptionPane.INFORMATION_MESSAGE))
         cBhaskara.delta = (cBhaskara.b * cBhaskara.b) - 4 * cBhaskara.a * cBhaskara.c;
 
-        if (cBhaskara.delta >= i /2) {
-            JOptionPane.showMessageDialog(null, "Resultado da Bhaskara:" + cBhaskara.delta,  "é positivo" , JOptionPane.INFORMATION_MESSAGE);
+        //Teste condicional para saber se as raízes são reais ou negativas
+        if (cBhaskara.delta > 0) {
+            JOptionPane.showMessageDialog(null, "A equação não possui raizes reais:" + cBhaskara.delta,  "é positivo" , JOptionPane.INFORMATION_MESSAGE);
 
         }
-        else {
-            JOptionPane.showMessageDialog(null,  cBhaskara, null, 0);
+        else if ( delta ==  0){
+            double raiz = -b / (2 * a);
+            JOptionPane.showMessageDialog(null, "A equação possui uma única raiz real:" cBhaskara, null, 0);
         }
 
 
