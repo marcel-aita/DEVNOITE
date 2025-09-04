@@ -1,58 +1,128 @@
 public class Fornecedor {
 
-    private int cnpj;
-    private String InscricaoEstadual;
-    private String razaosocial;
+    // Tipos de dados como 'String' são ideais para identificadores (CNPJ, telefone)
+    // que não serão usados em cálculos matemáticos.
+    private String cnpj;
+    private String inscricaoEstadual;
+    private String razaoSocial;
     private String nomeFantasia;
     private String endereco;
     private int numero;
-    private int cep;
+    private String cep;
     private String cidade;
     private String estado;
-    private int telefone;
+    private String telefone;
     private String email;
-    private boolean status;
-    
-    //setters
-    public void setCnpj(int c){
-        this.cnpj = c;
+    private String status;
+
+    public Fornecedor(String cnpj, String inscricaoEstadual, String razaoSocial, String nomeFantasia, String endereco, int numero, String cep, String cidade, String estado, String telefone, String email, String status) {
+        this.cnpj = cnpj;
+        this.inscricaoEstadual = inscricaoEstadual;
+        this.razaoSocial = razaoSocial;
+        this.nomeFantasia = nomeFantasia;
+        this.endereco = endereco;
+        this.numero = numero;
+        this.cep = cep;
+        this.cidade = cidade;
+        this.estado = estado;
+        this.telefone = telefone;
+        this.email = email;
+        this.status = status;
     }
 
-    public void setInscricaoEstadual(String insc){
-        this.InscricaoEstadual = insc;
+    public String getCnpj() {
+        return cnpj;
     }
 
-    public void setRazaosocial(String rz){
-        this.razaosocial = rz;
+    public void setCnpj(String cnpj) {
+        this.cnpj = cnpj;
     }
 
-    public void setNomeFantasia(String nf){
-        this.nomeFantasia = nf;
+    public String getInscricaoEstadual() {
+        return inscricaoEstadual;
     }
 
-    public void setEndereco(String end){
-        this.endereco = end;
-    }
-    
-    //getters
-    public int getCnpj(){
-        return this.cnpj;
+    public void setInscricaoEstadual(String inscricaoEstadual) {
+        this.inscricaoEstadual = inscricaoEstadual;
     }
 
-    public String getInscricaoEstadual(){
-        return this.InscricaoEstadual;
+    public String getRazaoSocial() {
+        return razaoSocial;
     }
 
-    public String getRazaosocial(){
-        return this.razaosocial;
+    public void setRazaoSocial(String razaoSocial) {
+        this.razaoSocial = razaoSocial;
     }
 
-    public String getNomeFantasia(){
-        return this.nomeFantasia;
+    public String getNomeFantasia() {
+        return nomeFantasia;
     }
 
-    public String getEndereco(){
-        return this.endereco;
+    public void setNomeFantasia(String nomeFantasia) {
+        this.nomeFantasia = nomeFantasia;
     }
 
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+
+    public String getCep() {
+        return cep;
+    }
+
+    public void setCep(String cep) {
+        this.cep = cep;
+    }
+
+    public String getCidade() {
+        return cidade;
+    }
+
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
 }

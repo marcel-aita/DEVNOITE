@@ -1,40 +1,46 @@
-public class Venda{
+public class Venda {
 
-    private long numeroNotaFiscal;
+    private int numeroNotaFiscal;
     private String dataVenda;
     private String horaVenda;
     private float valorTotal;
 
-    public void setNumeroNotaFiscal(long n){
-        this.numeroNotaFiscal = n;
+    public Venda(int numeroNotaFiscal, String dataVenda, String horaVenda, float valorTotal) {
+        this.numeroNotaFiscal = numeroNotaFiscal;
+        this.dataVenda = dataVenda;
+        this.horaVenda = horaVenda;
+        this.valorTotal = valorTotal;
     }
 
-    public long getNumeroNotaFiscal(){
+    public int getNumeroNotaFiscal() {
         return numeroNotaFiscal;
     }
 
-    public void setDataVenda(String dt){
-        this.dataVenda = dt;
+    public void setNumeroNotaFiscal(int numeroNotaFiscal) {
+        this.numeroNotaFiscal = numeroNotaFiscal;
     }
 
-    public String getDataVenda(){
+    public String getDataVenda() {
         return dataVenda;
     }
 
-    public void setHoraVenda(String hv){
-        this.horaVenda = hv;
+    public void setDataVenda(String dataVenda) {
+        this.dataVenda = dataVenda;
     }
 
-    public String getHoraVenda(){
+    public String getHoraVenda() {
         return horaVenda;
     }
 
-    public void setValorTotal(float vt){
-        this.valorTotal = vt;
+    public void setHoraVenda(String horaVenda) {
+        this.horaVenda = horaVenda;
     }
 
-    public float getValorTotal(){
+    public float getValorTotal() {
         return valorTotal;
     }
 
+    public void setValorTotal(float valorTotal) {
+        this.valorTotal = valorTotal;
+    }
 }
